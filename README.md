@@ -123,6 +123,13 @@ their real locations replace anything shown here.
   map view. Click a column heading to sort by it, again to reverse; the Y
   column sorts in tree order, so each clade stays together. Click a row to
   go to that sample on the map.
+- **Draw area** lets you outline a region by hand: click its corners on the
+  map, then click the first corner again (or double-click, or press Enter)
+  to close it. Backspace removes the last corner; Esc cancels. Only samples
+  inside the outline stay on the map, in the table (which opens by itself)
+  and in the CSV, together with any search and date filter. The outline is
+  kept in the page address, so copying the link shares it. Inferred samples
+  (hollow rings) count by their pin. **Clear area** removes it.
 - **Download filtered CSV** exports the matching samples with all their fields.
 - **Links:** the address can carry a search and a pinned sample, for example
   `index.html?q=y:V13&to=1 CE#id=I2762`.
