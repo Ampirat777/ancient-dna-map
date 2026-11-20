@@ -111,7 +111,10 @@ their real locations replace anything shown here.
   (an equivalent SNP gives the same result), `y:R1b`, `mt:H1` (H1 and its
   subclades, not H10), `culture:Maros`, `site:Mokrin`, `country:Hungary`,
   `id:I2762`. Terms combine: `y:P312 country:Hungary`. Y searches follow
-  each sample's path (see below). Use SNP names for complete results: long
+  each sample's path (see below). A Y SNP or branch name typed on its own
+  (`S20602`) searches the tree just as `y:S20602` does, but also matches
+  other fields as text: `V13` alone also finds mtDNA HV13b, while `y:V13`
+  finds Y-DNA only. Use SNP names for complete results: long
   ISOGG names such as `y:I2a1b` can only reach samples whose path comes from
   AADR, because only AADR gives ISOGG names; short ones (R1b, I2, J2a, E1b1b)
   work for every sample.
