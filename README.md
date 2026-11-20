@@ -122,7 +122,9 @@ their real locations replace anything shown here.
 - **Table** lists every sample that matches the filters, or only those in the
   map view. Click a column heading to sort by it, again to reverse; the Y
   column sorts in tree order, so each clade stays together. Click a row to
-  go to that sample on the map.
+  go to that sample on the map. **Copy table** copies every row, in the
+  current order, ready to paste into Excel or Google Sheets (selecting with
+  the mouse only reaches the rows on screen).
 - **Draw area** lets you outline a region by hand: click its corners on the
   map, then click the first corner again (or double-click, or press Enter)
   to close it. Backspace removes the last corner; Esc cancels. Only samples
@@ -130,7 +132,8 @@ their real locations replace anything shown here.
   and in the CSV, together with any search and date filter. The outline is
   kept in the page address, so copying the link shares it. Inferred samples
   (hollow rings) count by their pin. **Clear area** removes it.
-- **Download filtered CSV** exports the matching samples with all their fields.
+- **Download filtered CSV** exports the matching samples with all their fields;
+  while the table is open it follows the table's rows and sort order.
 - **Links:** the address can carry a search and a pinned sample, for example
   `index.html?q=y:V13&to=1 CE#id=I2762`.
 - **Layers** (top right): grey or OpenStreetMap background; rivers on or off.
