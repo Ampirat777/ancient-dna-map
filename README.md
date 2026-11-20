@@ -1,12 +1,12 @@
 # Ancient DNA samples by find spot
 
 An interactive map of about 22,000 ancient human genomes, from the Palaeolithic
-to the recent past. Each dot is one individual. Hover it for its date,
-culture, sex, Y-DNA and mtDNA haplogroups, site and source. Click it to list
-everyone buried at the same site.
+to the recent past. Each dot is one individual. Hover it for its date and how
+it was dated, culture, sex, Y-DNA and mtDNA haplogroups, site and source.
+Click it to list everyone buried at the same site, or open the sortable table
+of every sample that matches your search.
 
-**Open the map:** `https://<your-user-name>.github.io/<repository-name>/`
-(this address works once GitHub Pages is switched on, see below).
+**Open the map:** https://ampirat777.github.io/ancient-dna-map/
 
 ## What is on the map
 
@@ -54,16 +54,73 @@ their real locations replace anything shown here.
   Y haplogroup with yhaplo, from the public AADR genotypes. These are always
   labelled "called here". In checks against men AADR had already called,
   about 93% agree at the major-clade level.
+- **One Y tree for every call.** The Y calls come from several sources
+  (AADR, FamilyTreeDNA Discover, ybyra calls on the Akbari data, calls made
+  here, papers),
+  each with its own naming. Every call is placed on FamilyTreeDNA's public Y
+  tree, so a search for a clade finds everything below it, whoever made the
+  call. FTDNA Discover's own call is shown for about 8,300 samples.
+  - FTDNA's public tree leaves out some well-known SNP names, such as Y3120
+    and Z645. YFull's tree lists every SNP on each of its branches, so it
+    shows which FTDNA branch carries the same mutations: Y3120 is FTDNA's
+    I-S20602, so `y:Y3120` finds the same samples as `y:S20602`. Where even
+    that fails, the sample is placed at a higher branch, never a lower one,
+    and its card says so.
+  - Sometimes FTDNA splits one YFull branch into an upper and a lower part,
+    and it is unknown which part carries the SNP you searched for. The
+    search then starts at the lower part, where every sample is certainly
+    positive. Samples FTDNA puts only in the upper part are left out, unless
+    the call their path comes from names that SNP itself. Example:
+    `y:Y19966` (FTDNA H-P96 > H-Z19008) returns 102 samples; 15 at H-P96
+    alone are left out.
+  - **Each sample sits on the tree once.** Its place (its path) comes from
+    FamilyTreeDNA's call wherever there is one, for every haplogroup. Without
+    one it comes from the ybyra call, then AADR's, then the calls made here.
+    That order follows how often each source agrees with FTDNA on samples
+    FTDNA also called (ybyra 98%, AADR 96%, calls made here 96%). Searches,
+    the table's Y column and its sorting use this path only. Example: FTDNA
+    stops MGS200 at I-CTS10228 while AADR calls it I-Y3120, so it is found by
+    `y:CTS10228` but not by `y:Y3120`.
+  - **Every call is still shown.** A sample's card lists every assignment
+    and who made it (FTDNA Discover, AADR's manual or automatic call, ybyra
+    by Teepan, this project's yhaplo call, the publication). It says when
+    another source goes deeper than the path, and marks with ⚠ (also in the
+    table) a source that puts the sample on a different branch.
+- **Doubtful Y calls.** ybyra gives each call a score. FamilyTreeDNA has
+  its own call for nearly every ybyra call scoring 150 or more, but for only
+  3 of the 49 below that, and the low-scoring calls include samples known to
+  be female. A ybyra call under 150 that FTDNA does not confirm is therefore
+  shown as *dubious*: it stays on the card but does not place the sample on
+  the tree or match a Y search. Where it was the only sign of a man, the sex
+  is shown as "male?" (filed under *unknown* in the sex filter). Nine calls
+  are affected, seven of them on unpublished Akbari samples. Sex proven
+  otherwise overrides any table: I43953 (not on the map, as its find spot
+  cannot be inferred) is female by its sequencing reads, so its E-V13 call
+  is treated as spurious.
+- **Date method.** Each card and the table show how the date was obtained,
+  from AADR: radiocarbon on the individual itself, archaeological or
+  historical context, or radiocarbon-dated relatives. Akbari et al. give only
+  a date for their unpublished samples, so theirs is "not stated".
 - **Site coordinates for the thesis samples** are village or town centres;
   the thesis gives no coordinates.
 
 ## Using the map
 
 - **Search box:** words match anywhere. `field:value` narrows the search:
-  `y:V13` (follows the Y tree), `y:R1b`, `mt:H1` (H1 and its subclades, not
-  H10), `culture:Maros`, `site:Mokrin`, `country:Hungary`, `id:I2762`.
+  `y:L151` (L151 and everything below it: P312, U106 and so on), `y:L11`
+  (an equivalent SNP gives the same result), `y:R1b`, `mt:H1` (H1 and its
+  subclades, not H10), `culture:Maros`, `site:Mokrin`, `country:Hungary`,
+  `id:I2762`. Terms combine: `y:P312 country:Hungary`. Y searches follow
+  each sample's path (see below). Use SNP names for complete results: long
+  ISOGG names such as `y:I2a1b` can only reach samples whose path comes from
+  AADR, because only AADR gives ISOGG names; short ones (R1b, I2, J2a, E1b1b)
+  work for every sample.
 - **Period and from/to:** filter by date, for example `3000 BCE` to `500 CE`.
-- **List samples in view** and **Download filtered CSV** export what you see.
+- **Table** lists every sample that matches the filters, or only those in the
+  map view. Click a column heading to sort by it, again to reverse; the Y
+  column sorts in tree order, so each clade stays together. Click a row to
+  go to that sample on the map.
+- **Download filtered CSV** exports the matching samples with all their fields.
 - **Links:** the address can carry a search and a pinned sample, for example
   `index.html?q=y:V13&to=1 CE#id=I2762`.
 - **Layers** (top right): grey or OpenStreetMap background; rivers on or off.
@@ -74,7 +131,12 @@ their real locations replace anything shown here.
 |---|---|---|
 | Published samples | Mallick S. et al. (2024) The Allen Ancient DNA Resource (AADR), *Scientific Data* 11:182; data v66, Harvard Dataverse doi:[10.7910/DVN/FFIDCW](https://doi.org/10.7910/DVN/FFIDCW) | CC0 1.0 |
 | Anonymized samples: dates, coverage, IBD used for placement | Akbari A. et al. (2026) Ancient DNA reveals pervasive directional selection across West Eurasia, *Nature*, doi:[10.1038/s41586-026-10358-1](https://doi.org/10.1038/s41586-026-10358-1), supplementary data | the publisher's and authors' terms; please cite the paper |
-| Y and mtDNA haplogroup calls for the Akbari individuals | third-party haplogroup calls made on the Akbari 2026 data | as received; please cite Akbari et al. 2026 |
+| Y-DNA calls for the Akbari individuals | made with ybyra by Teepan (genarchivist.net) on the Akbari 2026 data | please credit Teepan and cite Akbari et al. 2026 |
+| mtDNA calls for the Akbari individuals | third-party calls on the Akbari 2026 data, received with the Y calls | as received; please cite Akbari et al. 2026 |
+| Y tree | [FamilyTreeDNA public Y-DNA haplotree](https://www.familytreedna.com/public/y-dna-haplotree/R), downloaded 2026-11-20 | FamilyTreeDNA's; no licence stated. Used to place and search the calls; only branch names are shown |
+| FTDNA haplogroups and names of ancient samples | [FamilyTreeDNA Discover](https://discover.familytreedna.com/), as compiled by [ancientsampledb.app](https://ancientsampledb.app/) | FamilyTreeDNA's; no licence stated. Shown with credit on every card |
+| SNP names between trees | [YFull YTree](https://github.com/YFullTeam/YTree) v14.06.0, © YFull | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); used to translate SNP names, not shown |
+| SNP name synonyms | ISOGG Y-DNA Haplogroup Tree 2016, as packaged with [yhaplo](https://github.com/23andMe/yhaplo) | used only to translate SNP names, not shown |
 | Thesis samples (◆) | Rodrigues S. M. (2023) *Archaeogenetics and Palaeogenetics of Southeast and Eastern Europe*, PhD thesis, University of Huddersfield ([record](https://pure.hud.ac.uk/en/studentTheses/archaeogenetics-and-palaeogenetics-of-southeast-and-eastern-europ/)) | facts cited from the thesis; please cite it |
 | Rivers | [Natural Earth](https://www.naturalearthdata.com/) 1:10m rivers and lake centrelines | public domain |
 | Background map | [OpenFreeMap](https://openfreemap.org), [OpenMapTiles](https://www.openmaptiles.org/), data &copy; [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors | ODbL (data); free to use |
