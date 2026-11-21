@@ -125,7 +125,7 @@ their real locations replace anything shown here.
   AADR, because only AADR gives ISOGG names; short ones (R1b, I2, J2a, E1b1b)
   work for every sample.
 - **Period and from/to:** filter by date, for example `3000 BCE` to `500 CE`.
-- **Second filter row:** *Country*, *Region*, *Culture / group*, *Study* and
+- **Second filter row:** *Country*, *Region*, *Culture / group*, *Study*, *Y source* and
   *Date method* each open a list with a search box. Tick one or more values;
   each shows how many samples it would give under your other filters.
   Region is the UN's M49 subregion of the country (Hungary and Romania are
