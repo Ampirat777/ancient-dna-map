@@ -1,10 +1,11 @@
 # Ancient DNA samples by find spot
 
 An interactive map of about 22,000 ancient human genomes, from the Palaeolithic
-to the recent past. Each dot is one individual. Hover it for its date and how
-it was dated, culture, sex, Y-DNA and mtDNA haplogroups, site and source.
-Click it to list everyone buried at the same site, or open the sortable table
-of every sample that matches your search.
+to the recent past. Each dot is one individual. Hover or tap it for its card:
+date and how it was dated, culture, site, sex, Y-DNA and mtDNA haplogroups,
+data quality and source. Clicking also lists everyone buried at the same site
+(on a phone, use the card's "List all ... samples at this site"), and the
+sortable table shows every sample that matches your search.
 
 **Open the map:** https://ampirat777.github.io/ancient-dna-map/
 
