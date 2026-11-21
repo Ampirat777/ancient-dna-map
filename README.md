@@ -14,7 +14,7 @@ sortable table shows every sample that matches your search.
 | Marker | Samples | Location |
 |---|---|---|
 | ● filled dot | 20,650 published individuals from the Allen Ancient DNA Resource (AADR v66) | the coordinates AADR records for the site, which are sometimes the nearest town |
-| ● filled dot, card badge *not in AADR v66* | 157 published individuals not yet in AADR: all 156 newly sequenced individuals of Schütz et al. 2025 (Hungary and Romania; Sarmatian, Late Sarmatian-Hun and Hun periods, and two Iron Age), and MSG-1 (Maróti et al. 2022), which that paper re-analysed | the GPS coordinates in the papers' tables |
+| ● filled dot, card badge *not in AADR v66* | 588 published individuals from Hungary and Romania not yet in AADR, each taken from its own paper: Tian et al. 2026 (314), Schütz et al. 2025 (156), Vyas et al. 2023 (38), Gerber et al. 2024 (23), Yediay et al. 2024 (22, preprint), Gînguță et al. 2023 (13), Nagy et al. 2021 (9), Maróti et al. 2022 (3), Blöcher et al. 2026 (3), Gnecchi-Ruscone et al. 2024 (2), Penske et al. 2023 (2), Mattila et al. 2023 (2) and Hajdu et al. 2026 (1) | the paper's coordinates; where a paper gives none, AADR's for the paper's other samples from the same site, else the site named in it pinned from OpenStreetMap; the card says which |
 | ○ hollow ring | 1,703 individuals from Akbari et al. 2026 whose locations were **anonymized** by the authors | **inferred** by this project, see below |
 | ◆ diamond | 33 individuals added by hand from a PhD thesis (Rodrigues 2023, Romania) | the village or town named in the thesis |
 
@@ -108,14 +108,20 @@ their real locations replace anything shown here.
   from AADR: radiocarbon on the individual itself, archaeological or
   historical context, or radiocarbon-dated relatives. Akbari et al. give only
   a date for their unpublished samples, so theirs is "not stated". For the
-  157 samples not in AADR, everything follows the papers: 65 have a
-  radiocarbon date from Schütz et al. 2025; the other 92 take the
-  archaeological date the paper gives for their grave or, failing that, their
-  cemetery (the middle of that range is used for sorting and filtering, and
-  the card quotes the range and says which it is). Where the paper sets a
+  588 samples not in AADR, everything follows their papers: a radiocarbon
+  date where the paper gives one for the individual, otherwise the
+  archaeological date the paper gives for the grave, burial group or
+  cemetery (the middle of that range is used for sorting and filtering; the
+  card quotes the range and says which it is). Where a paper sets a
   radiocarbon date aside (a freshwater reservoir effect: NKL-7, OFU-168,
   OFU-422) or dates the grave later by its finds, the card says so under
-  *Date check*.
+  *Date check*. Where a paper lists several equally possible mtDNA
+  haplogroups, the map shows the one they share and the card lists them all.
+  Samples a paper marks as a second sampling of another individual, as
+  contaminated or as too low in coverage are left out; where a paper marks
+  several samples as one individual, it is shown once. Where a paper gives no
+  date (some burials in the Royal Basilica of Székesfehérvár), the sample is
+  shown undated.
 - **AADR rows corrected from their paper.** Where the paper that published a
   sample contradicts AADR v66, the map follows the paper and the card's
   *Note* says what was changed and why. So far one: ASZK-1, which AADR places
@@ -178,8 +184,20 @@ their real locations replace anything shown here.
 | Data | Source | Terms |
 |---|---|---|
 | Published samples | Mallick S. et al. (2024) The Allen Ancient DNA Resource (AADR), *Scientific Data* 11:182; data v66, Harvard Dataverse doi:[10.7910/DVN/FFIDCW](https://doi.org/10.7910/DVN/FFIDCW) | CC0 1.0 |
-| Samples not in AADR (156) | Schütz O. et al. (2025) Unveiling the origins and genetic makeup of the "forgotten people": a study of the Sarmatian-period population in the Carpathian Basin, *Cell* 188:4074-4090, doi:[10.1016/j.cell.2025.05.009](https://doi.org/10.1016/j.cell.2025.05.009). Cemetery, grave, coordinates, radiocarbon dates, coverage, sex, mtDNA and group from its Tables S1a and S1c; archaeological dates from the site descriptions in its supplement; Y from FamilyTreeDNA Discover | open access, CC BY-NC-ND 4.0; please cite the paper |
-| MSG-1 (not in AADR) | Maróti Z. et al. (2022) The genetic origin of Huns, Avars, and conquering Hungarians, *Current Biology* 32:2858-2870, doi:[10.1016/j.cub.2022.04.093](https://doi.org/10.1016/j.cub.2022.04.093), Data S1A (date); Schütz et al. 2025, Table S1b (coordinates, coverage, sex, mtDNA, Y) | please cite the papers |
+| Not in AADR: 156 individuals | Schütz O. et al. (2025) Unveiling the origins and genetic makeup of the "forgotten people": a study of the Sarmatian-period population in the Carpathian Basin, *Cell* 188:4074-4090, doi:[10.1016/j.cell.2025.05.009](https://doi.org/10.1016/j.cell.2025.05.009). Cemetery, grave, coordinates, radiocarbon dates, coverage, sex, mtDNA and group from its Tables S1a and S1c; archaeological dates from the site descriptions in its supplement; Y from FamilyTreeDNA Discover | open access, CC BY-NC-ND 4.0; please cite the paper |
+| Not in AADR: MSG-1, OBH-52, SH-66 | Maróti Z. et al. (2022) The genetic origin of Huns, Avars, and conquering Hungarians, *Current Biology* 32:2858-2870, doi:[10.1016/j.cub.2022.04.093](https://doi.org/10.1016/j.cub.2022.04.093), Data S1A; for MSG-1 also Schütz et al. 2025, Table S1b | please cite the paper |
+| Not in AADR: 314 individuals | Tian Y. et al. (2026) Unveiling the complexity of post-Roman polity formation in Pannonia using ancient DNA, *Science* 392:eaec2634, doi:[10.1126/science.aec2634](https://doi.org/10.1126/science.aec2634); the data are read from the authors' preprint version, doi:[10.1101/2025.08.18.670760](https://doi.org/10.1101/2025.08.18.670760) (Supplementary Table 1, site descriptions) | please cite the paper |
+| Not in AADR: 38 individuals | Vyas D. N. et al. (2023) Fine-scale sampling uncovers the complexity of migrations in 5th-6th century Pannonia, *Current Biology* 33:3951-3961, doi:[10.1016/j.cub.2023.07.063](https://doi.org/10.1016/j.cub.2023.07.063), Table S1 | please cite the paper |
+| Not in AADR: 22 individuals | Yediay F. E. et al. (2024) Ancient genomics support deep divergence between Eastern and Western Mediterranean Indo-European languages, bioRxiv preprint, doi:[10.1101/2024.12.02.626332](https://doi.org/10.1101/2024.12.02.626332), Tables S2 and S7 | please cite the preprint |
+| Not in AADR: KUP003, KUP025 | Gnecchi-Ruscone G. A. et al. (2024) Network of large pedigrees reveals social practices of Avar communities, *Nature* 629:376-383, doi:[10.1038/s41586-024-07312-4](https://doi.org/10.1038/s41586-024-07312-4), Supplementary Table 1 and Information; coordinates as AADR gives for the paper's other Kunpeszér individuals | please cite the paper |
+| Not in AADR: 23 individuals | Gerber D. et al. (2024) Ancient genomes reveal Avar-Hungarian transformations in the 9th-10th centuries CE Carpathian Basin, *Science Advances* 10:eadq5864, doi:[10.1126/sciadv.adq5864](https://doi.org/10.1126/sciadv.adq5864), Table S1 | CC BY-NC 4.0; please cite the paper |
+| Not in AADR: 13 individuals | Gînguță A. et al. (2023) Genetic identification of members of the prominent Báthory aristocratic family, *iScience* 26:107911, doi:[10.1016/j.isci.2023.107911](https://doi.org/10.1016/j.isci.2023.107911), Table S1 | please cite the paper |
+| Not in AADR: 9 individuals | Nagy P. L. et al. (2021) Determination of the phylogenetic origins of the Árpád Dynasty based on Y chromosome sequencing of Béla the Third, *European Journal of Human Genetics* 29:164-172, doi:[10.1038/s41431-020-0683-z](https://doi.org/10.1038/s41431-020-0683-z), Tables 1 and 2 | please cite the paper |
+| Not in AADR: Arg1, Arg3, Arg5_1 | Blöcher J. et al. (2026) Demography and life histories across the Roman frontier in Germany 400-700 CE, *Nature* 654:984-993, doi:[10.1038/s41586-026-10437-3](https://doi.org/10.1038/s41586-026-10437-3), Supplementary Table 1 (Argamum) | please cite the paper |
+| Not in AADR: PIE016 (= PIE007, PIE031), PIE061 (= PIE060) | Penske S. et al. (2023) Early contact between late farming and pastoralist societies in southeastern Europe, *Nature* 620:358-365, doi:[10.1038/s41586-023-06334-8](https://doi.org/10.1038/s41586-023-06334-8), Supplementary Table A | please cite the paper |
+| Not in AADR: buk013, buk031 | Mattila T. M. et al. (2023) Genetic continuity, isolation, and gene flow in Stone Age Central and Eastern Europe, *Communications Biology* 6:793, doi:[10.1038/s42003-023-05131-3](https://doi.org/10.1038/s42003-023-05131-3), Supplementary Data 1 | please cite the paper |
+| Not in AADR: BPDOM01 | Hajdu T. et al. (2026) Murder in cold blood? Forensic and bioarchaeological identification of the skeletal remains of Béla, Duke of Macsó (c. 1245-1272), *Forensic Science International: Genetics* 81:103381, doi:[10.1016/j.fsigen.2025.103381](https://doi.org/10.1016/j.fsigen.2025.103381), Supplementary Information | please cite the paper |
+| Site locations where a paper gives no coordinates | [OpenStreetMap](https://www.openstreetmap.org/copyright) (Nominatim): the street, district or village the paper's site name gives | ODbL; &copy; OpenStreetMap contributors |
 | Anonymized samples: dates, coverage, IBD used for placement | Akbari A. et al. (2026) Ancient DNA reveals pervasive directional selection across West Eurasia, *Nature*, doi:[10.1038/s41586-026-10358-1](https://doi.org/10.1038/s41586-026-10358-1), supplementary data | the publisher's and authors' terms; please cite the paper |
 | Y-DNA calls for the Akbari individuals | made with ybyra by Teepan (genarchivist.net) on the Akbari 2026 data | please credit Teepan and cite Akbari et al. 2026 |
 | mtDNA calls for the Akbari individuals | third-party calls on the Akbari 2026 data, received with the Y calls | as received; please cite Akbari et al. 2026 |
