@@ -59,7 +59,7 @@ their real locations replace anything shown here.
   here, papers),
   each with its own naming. Every call is placed on FamilyTreeDNA's public Y
   tree, so a search for a clade finds everything below it, whoever made the
-  call. FTDNA Discover's own call is shown for about 8,300 samples.
+  call.
   - FTDNA's public tree leaves out some well-known SNP names, such as Y3120
     and Z645. YFull's tree lists every SNP on each of its branches, so it
     shows which FTDNA branch carries the same mutations: Y3120 is FTDNA's
@@ -73,19 +73,24 @@ their real locations replace anything shown here.
     the call their path comes from names that SNP itself. Example:
     `y:Y19966` (FTDNA H-P96 > H-Z19008) returns 102 samples; 15 at H-P96
     alone are left out.
-  - **Each sample sits on the tree once.** Its place (its path) comes from
-    FamilyTreeDNA's call wherever there is one, for every haplogroup. Without
-    one it comes from the ybyra call, then AADR's, then the calls made here.
-    That order follows how often each source agrees with FTDNA on samples
-    FTDNA also called (ybyra 98%, AADR 96%, calls made here 96%). Searches,
-    the table's Y column and its sorting use this path only. Example: FTDNA
-    stops MGS200 at I-CTS10228 while AADR calls it I-Y3120, so it is found by
-    `y:CTS10228` but not by `y:Y3120`.
-  - **Every call is still shown.** A sample's card lists every assignment
-    and who made it (FTDNA Discover, AADR's manual or automatic call, ybyra
-    by Teepan, this project's yhaplo call, the publication). It says when
-    another source goes deeper than the path, and marks with ⚠ (also in the
-    table) a source that puts the sample on a different branch.
+  - **FamilyTreeDNA first.** Where FTDNA has assigned a Y haplogroup
+    (about 8,300 samples), that is the only Y assignment shown, for every
+    haplogroup: other sources' calls for the same sample are left out of
+    the card, the table, the CSV and the search. Example: FTDNA stops MGS200
+    at I-CTS10228 (AADR had called it I-Y3120), so it is found by
+    `y:CTS10228` but not by `y:Y3120`. FTDNA's conclusion also settles the
+    sex: a sample it assigns a Y haplogroup is shown as male (84 samples
+    that AADR or this project had as female or unknown; the card says so).
+  - **Without an FTDNA call** the sample's other calls are shown, each with
+    who made it (ybyra by Teepan, AADR's manual or automatic call, this
+    project's yhaplo call, the publication), under the note "no
+    FamilyTreeDNA assignment: unconfirmed, may be of low quality". Its tree
+    place then comes from the ybyra call, then AADR's, then this project's:
+    the order of how often each agrees with FTDNA where both called the same
+    sample (ybyra 98%, AADR 96%, this project 96%). ⚠ marks the few samples
+    whose sources put them on different branches.
+  - The table's **Y source** column says whose call each row's Y is (FTDNA,
+    or which unconfirmed source), so you can sort them apart.
 - **Doubtful Y calls.** ybyra gives each call a score. FamilyTreeDNA has
   its own call for nearly every ybyra call scoring 150 or more, but for only
   3 of the 49 below that, and the low-scoring calls include samples known to
@@ -119,6 +124,16 @@ their real locations replace anything shown here.
   AADR, because only AADR gives ISOGG names; short ones (R1b, I2, J2a, E1b1b)
   work for every sample.
 - **Period and from/to:** filter by date, for example `3000 BCE` to `500 CE`.
+- **Second filter row:** *Country*, *Region*, *Culture / group*, *Study* and
+  *Date method* each open a list with a search box. Tick one or more values;
+  each shows how many samples it would give under your other filters.
+  Region is the UN's M49 subregion of the country (Hungary and Romania are
+  Eastern Europe, Serbia and Croatia Southern Europe). Unpublished samples
+  are listed under their anchor's culture, marked [inferred]. *Coverage*
+  takes a minimum and/or maximum (`1` = at least 1×); samples without a
+  coverage figure drop out once it is set. **Reset all filters** clears
+  everything. The page address keeps every filter, so copying it shares
+  exactly what you see.
 - **Table** lists every sample that matches the filters, or only those in the
   map view. Click a column heading to sort by it, again to reverse; the Y
   column sorts in tree order, so each clade stays together. Click a row to
