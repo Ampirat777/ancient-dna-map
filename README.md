@@ -116,6 +116,12 @@ their real locations replace anything shown here.
   radiocarbon date aside (a freshwater reservoir effect: NKL-7, OFU-168,
   OFU-422) or dates the grave later by its finds, the card says so under
   *Date check*.
+- **AADR rows corrected from their paper.** Where the paper that published a
+  sample contradicts AADR v66, the map follows the paper and the card's
+  *Note* says what was changed and why. So far one: ASZK-1, which AADR places
+  at Marosszentgyörgy (Romania); Maróti et al. 2022 and Schütz et al. 2025
+  give the solitary grave at Árpás-Dombiföld (Hungary), with their date,
+  mtDNA and group.
 - **Site coordinates for the thesis samples** are village or town centres;
   the thesis gives no coordinates.
 
