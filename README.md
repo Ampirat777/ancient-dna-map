@@ -14,6 +14,7 @@ sortable table shows every sample that matches your search.
 | Marker | Samples | Location |
 |---|---|---|
 | ● filled dot | 20,650 published individuals from the Allen Ancient DNA Resource (AADR v66) | the coordinates AADR records for the site, which are sometimes the nearest town |
+| ● filled dot, card badge *not in AADR v66* | 157 published individuals not yet in AADR: all 156 newly sequenced individuals of Schütz et al. 2025 (Hungary and Romania; Sarmatian, Late Sarmatian-Hun and Hun periods, and two Iron Age), and MSG-1 (Maróti et al. 2022), which that paper re-analysed | the GPS coordinates in the papers' tables |
 | ○ hollow ring | 1,703 individuals from Akbari et al. 2026 whose locations were **anonymized** by the authors | **inferred** by this project, see below |
 | ◆ diamond | 33 individuals added by hand from a PhD thesis (Rodrigues 2023, Romania) | the village or town named in the thesis |
 
@@ -106,7 +107,15 @@ their real locations replace anything shown here.
 - **Date method.** Each card and the table show how the date was obtained,
   from AADR: radiocarbon on the individual itself, archaeological or
   historical context, or radiocarbon-dated relatives. Akbari et al. give only
-  a date for their unpublished samples, so theirs is "not stated".
+  a date for their unpublished samples, so theirs is "not stated". For the
+  157 samples not in AADR, everything follows the papers: 65 have a
+  radiocarbon date from Schütz et al. 2025; the other 92 take the
+  archaeological date the paper gives for their grave or, failing that, their
+  cemetery (the middle of that range is used for sorting and filtering, and
+  the card quotes the range and says which it is). Where the paper sets a
+  radiocarbon date aside (a freshwater reservoir effect: NKL-7, OFU-168,
+  OFU-422) or dates the grave later by its finds, the card says so under
+  *Date check*.
 - **Site coordinates for the thesis samples** are village or town centres;
   the thesis gives no coordinates.
 
@@ -163,6 +172,8 @@ their real locations replace anything shown here.
 | Data | Source | Terms |
 |---|---|---|
 | Published samples | Mallick S. et al. (2024) The Allen Ancient DNA Resource (AADR), *Scientific Data* 11:182; data v66, Harvard Dataverse doi:[10.7910/DVN/FFIDCW](https://doi.org/10.7910/DVN/FFIDCW) | CC0 1.0 |
+| Samples not in AADR (156) | Schütz O. et al. (2025) Unveiling the origins and genetic makeup of the "forgotten people": a study of the Sarmatian-period population in the Carpathian Basin, *Cell* 188:4074-4090, doi:[10.1016/j.cell.2025.05.009](https://doi.org/10.1016/j.cell.2025.05.009). Cemetery, grave, coordinates, radiocarbon dates, coverage, sex, mtDNA and group from its Tables S1a and S1c; archaeological dates from the site descriptions in its supplement; Y from FamilyTreeDNA Discover | open access, CC BY-NC-ND 4.0; please cite the paper |
+| MSG-1 (not in AADR) | Maróti Z. et al. (2022) The genetic origin of Huns, Avars, and conquering Hungarians, *Current Biology* 32:2858-2870, doi:[10.1016/j.cub.2022.04.093](https://doi.org/10.1016/j.cub.2022.04.093), Data S1A (date); Schütz et al. 2025, Table S1b (coordinates, coverage, sex, mtDNA, Y) | please cite the papers |
 | Anonymized samples: dates, coverage, IBD used for placement | Akbari A. et al. (2026) Ancient DNA reveals pervasive directional selection across West Eurasia, *Nature*, doi:[10.1038/s41586-026-10358-1](https://doi.org/10.1038/s41586-026-10358-1), supplementary data | the publisher's and authors' terms; please cite the paper |
 | Y-DNA calls for the Akbari individuals | made with ybyra by Teepan (genarchivist.net) on the Akbari 2026 data | please credit Teepan and cite Akbari et al. 2026 |
 | mtDNA calls for the Akbari individuals | third-party calls on the Akbari 2026 data, received with the Y calls | as received; please cite Akbari et al. 2026 |
