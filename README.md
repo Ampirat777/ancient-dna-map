@@ -147,6 +147,10 @@ their real locations replace anything shown here.
   and in the CSV, together with any search and date filter. The outline is
   kept in the page address, so copying the link shares it. Inferred samples
   (hollow rings) count by their pin. **Clear area** removes it.
+- **Hide filters / Show filters** (next to the title) folds everything above
+  the map away; the title bar then shows the sample count and how many
+  filters are active. On phones the filters start folded, and the page
+  remembers your choice on each device.
 - **Download filtered CSV** exports the matching samples with all their fields;
   while the table is open it follows the table's rows and sort order.
 - **Links:** the address can carry a search and a pinned sample, for example
