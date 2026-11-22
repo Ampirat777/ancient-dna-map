@@ -14,7 +14,7 @@ sortable table shows every sample that matches your search.
 | Marker | Samples | Location |
 |---|---|---|
 | ● filled dot | 20,650 published individuals from the Allen Ancient DNA Resource (AADR v66) | the coordinates AADR records for the site, which are sometimes the nearest town |
-| ● filled dot, card badge *not in AADR v66* | 588 published individuals from Hungary and Romania not yet in AADR, each taken from its own paper: Tian et al. 2026 (314), Schütz et al. 2025 (156), Vyas et al. 2023 (38), Gerber et al. 2024 (23), Yediay et al. 2024 (22, preprint), Gînguță et al. 2023 (13), Nagy et al. 2021 (9), Maróti et al. 2022 (3), Blöcher et al. 2026 (3), Gnecchi-Ruscone et al. 2024 (2), Penske et al. 2023 (2), Mattila et al. 2023 (2) and Hajdu et al. 2026 (1) | the paper's coordinates; where a paper gives none, AADR's for the paper's other samples from the same site, else the site named in it pinned from OpenStreetMap; the card says which |
+| ● filled dot, card badge *not in AADR v66* | 817 published individuals not yet in AADR, each taken from its own paper (589 from Hungary and Romania, 224 from Spain, 4 from the Lower Rhine–Meuse area): Tian et al. 2026 (314), Schütz et al. 2025 (156), Vyas et al. 2023 (38), Gerber et al. 2024 (23), Yediay et al. 2024 (22, preprint), Gînguță et al. 2023 (13), Nagy et al. 2021 (9), Maróti et al. 2022 (3), Blöcher et al. 2026 (3), Gnecchi-Ruscone et al. 2024 (2), Penske et al. 2023 (2), Mattila et al. 2023 (2), Hajdu et al. 2026 (1), Varga et al. 2023 (1, St Ladislaus, pinned at his burial place) Olalde et al. 2026 (4) and Carrión et al. 2026 (224) | the paper's coordinates; where a paper gives none, AADR's for the paper's other samples from the same site, else the site named in it pinned from OpenStreetMap; the card says which |
 | ○ hollow ring | 1,703 individuals from Akbari et al. 2026 whose locations were **anonymized** by the authors | **inferred** by this project, see below |
 | ◆ diamond | 33 individuals added by hand from a PhD thesis (Rodrigues 2023, Romania) | the village or town named in the thesis |
 
@@ -40,6 +40,17 @@ kind of evidence is.
 whether the same evidence recovers it. This measures the country; the exact
 site is less certain. Placements are dropped when relatives' dates contradict
 each other. Samples with weaker evidence are not shown.
+
+When a paper later publishes one of these individuals, its own find spot
+replaces the inferred one and the card says where the map had placed it.
+Four so far, and two of them show how wrong a confident-looking pin can be:
+
+| Individual | Inferred at (confidence) | Published find spot | Off by |
+|---|---|---|---|
+| I12902 | Ottoland Kromme Elleboog, NL (site likely) | Mienakker, NL (Olalde et al. 2026) | 95 km |
+| I7018 | Malonne Petit Ri, BE (region only) | Grotte Rousseau, BE (Olalde et al. 2026) | 9 km |
+| I22103 | Birgi, Sicily (site probable, from a block of neighbouring lab numbers) | L'Hostalot, Castelló, Spain (Carrión et al. 2026) | 1,101 km |
+| I23273 | Birgi, Sicily (through its relative I22103) | Necrópolis Blanes, Mérida, Spain (Carrión et al. 2026) | 1,641 km |
 
 **These pins are working hypotheses, not recorded find spots. Do not cite
 them as the location of a sample.** When these individuals are published,
@@ -76,39 +87,75 @@ their real locations replace anything shown here.
     `y:Y19966` (FTDNA H-P96 > H-Z19008) returns 102 samples; 15 at H-P96
     alone are left out.
   - **FamilyTreeDNA first.** Where FTDNA has assigned a Y haplogroup
-    (about 8,300 samples), that is the only Y assignment shown, for every
+    (about 9,200 samples), that is the only Y assignment shown, for every
     haplogroup: other sources' calls for the same sample are left out of
     the card, the table, the CSV and the search. Example: FTDNA stops MGS200
     at I-CTS10228 (AADR had called it I-Y3120), so it is found by
     `y:CTS10228` but not by `y:Y3120`. FTDNA's conclusion also settles the
     sex: a sample it assigns a Y haplogroup is shown as male (84 samples
     that AADR or this project had as female or unknown; the card says so).
+    FTDNA often files an ancient sample under the paper's lab ID (PVper125
+    for AADR's PV-125). Such a record is linked when the site letters and
+    the grave or sample number agree in both IDs and in FTDNA's sample name
+    ("Pitvaros 125"), or when the paper's own table gives that lab ID
+    (MMper268 = MM-80 in Maróti et al. 2022). This added FTDNA's call to
+    577 samples, mostly McColl et al. 2026 and Maróti et al. 2022.
   - **Without an FTDNA call** the sample's other calls are shown, each with
-    who made it (ybyra by Teepan, AADR's manual or automatic call, this
-    project's yhaplo call, the publication), under the note "no
-    FamilyTreeDNA assignment: unconfirmed, may be of low quality". Its tree
-    place then comes from the ybyra call, then AADR's, then this project's:
-    the order of how often each agrees with FTDNA where both called the same
-    sample (ybyra 98%, AADR 96%, this project 96%). ⚠ marks the few samples
-    whose sources put them on different branches.
+    who made it (a ybyra run made for this map, ybyra by Teepan, the
+    publishing paper's own call, AADR's manual or automatic call, this
+    project's yhaplo call), under the note "no FamilyTreeDNA assignment:
+    unconfirmed, may be of low quality". Its tree place comes from the first
+    of them in that order. ybyra comes first because it agrees with FTDNA
+    most often where both called the same sample (ybyra 98%, AADR 96%, this
+    project 96%); the paper's call ranks above AADR's because the map
+    follows the publishing paper wherever it has one. ⚠ marks the few
+    samples whose sources put them on different branches.
   - The table's **Y source** column says whose call each row's Y is (FTDNA,
     or which unconfirmed source), so you can sort them apart.
-- **Doubtful Y calls.** ybyra gives each call a score. FamilyTreeDNA has
-  its own call for nearly every ybyra call scoring 150 or more, but for only
-  3 of the 49 below that, and the low-scoring calls include samples known to
-  be female. A ybyra call under 150 that FTDNA does not confirm is therefore
-  shown as *dubious*: it stays on the card but does not place the sample on
-  the tree or match a Y search. Where it was the only sign of a man, the sex
-  is shown as "male?" (filed under *unknown* in the sex filter). Nine calls
-  are affected, seven of them on unpublished Akbari samples. Sex proven
-  otherwise overrides any table: I43953 (not on the map, as its find spot
-  cannot be inferred) is female by its sequencing reads, so its E-V13 call
-  is treated as spurious.
+- **Y calls too young for the person.** Every Y call except FamilyTreeDNA's is checked against the age YFull gives its branch: when even the oldest formation age of the branch is more than 500 years after the person lived, the call cannot be right (typically an automatic call on very low coverage), so the sample moves up to the deepest branch on that line that already existed, and the card says so under *Y check*. Twenty samples are affected, e.g. Solutrean LPI002 (AADR: I-Y21293, a branch about 5,000 years old) now at I-M253. For I3004 (Aveline's Hole, Mesolithic) and I2181 (Smyadovo, Chalcolithic) a ybyra run made for this map places them at F-M89 and R-M207; AADR's automatic calls (R-Y11281, R-Y157823) are false positives.
+- **Low-scoring and doubtful Y calls.** ybyra gives each call a score;
+  ybyra itself flags scores under 50 as low. Measured against
+  FamilyTreeDNA on the samples both called, ybyra calls scoring 150 or more
+  land on a different branch 2.0% of the time (0 of 102 for the runs made
+  for this map). AADR's calls do so 4.2% of the time, and the papers' own
+  calls 4.5%. Below 150 there are too few FTDNA calls to measure. So a
+  ybyra call still places the sample ahead of the paper's and AADR's calls
+  even when its score is low; the card then carries a *low score* caution
+  (53 runs). The exception is a low-scoring call that is the sample's only
+  sign of a Y chromosome: some of those belong to women (I21899, score 12,
+  is female by AADR's own sexing). Such a call is shown as *dubious*: it
+  stays on the card but does not place the sample on the tree or match a Y
+  search. Where it was the only sign of a man, the sex is shown as "male?"
+  (filed under *unknown* in the sex filter). Nine calls are affected, seven
+  of them on unpublished Akbari samples. Of the 183 ybyra runs made for this
+  map, 107 overlap with FTDNA; they agree with it as described above. Sex
+  proven otherwise overrides any table: I43953 (not on the map, as its find
+  spot cannot be inferred) is female by its sequencing reads, so its E-V13
+  call is treated as spurious. No ybyra placement may rest on transition
+  SNPs alone (C↔T, G↔A). Post-mortem damage turns C into T and G into A,
+  so a "derived" transition can be damage. A ybyra call whose branch is
+  defined only by transitions sits at the deepest branch on its line that
+  has a transversion, and the card says so under *Y check*. That moved 254
+  calls (25 of the runs made for this map); for 249 of them FamilyTreeDNA's
+  own call decides the placement anyway. Where AADR has the sample's
+  genotypes, every ybyra call is also read against them along its line,
+  from the root to the called branch. If a branch below the deepest one
+  the genotypes read derived reads ancestral, the deeper call is likely a
+  false positive and the sample sits at that deepest derived branch. Two so
+  far: Ukraine_HG1 reads ancestral at CTS5437, the call's own SNP, and sits
+  at R-CTS7500; NEO677 reads ancestral on R-V88 and sits at R-PF6289. AADR's
+  1240K genotypes cover mostly older SNPs, though. The last branches of a
+  deep call often have no SNP there and can't be checked: 29 of the 77
+  checked calls end in such untested branches, which is not evidence
+  against them. Every call is also age-checked, including
+  calls in FTDNA's naming. I27983's low-scoring R-Z290 lies below P312, far
+  too young for a man of about 5175 BCE, so the card says so and he sits
+  at R-L51.
 - **Date method.** Each card and the table show how the date was obtained,
   from AADR: radiocarbon on the individual itself, archaeological or
   historical context, or radiocarbon-dated relatives. Akbari et al. give only
   a date for their unpublished samples, so theirs is "not stated". For the
-  588 samples not in AADR, everything follows their papers: a radiocarbon
+  589 samples not in AADR, everything follows their papers: a radiocarbon
   date where the paper gives one for the individual, otherwise the
   archaeological date the paper gives for the grave, burial group or
   cemetery (the middle of that range is used for sorting and filtering; the
@@ -122,12 +169,77 @@ their real locations replace anything shown here.
   several samples as one individual, it is shown once. Where a paper gives no
   date (some burials in the Royal Basilica of Székesfehérvár), the sample is
   shown undated.
-- **AADR rows corrected from their paper.** Where the paper that published a
-  sample contradicts AADR v66, the map follows the paper and the card's
-  *Note* says what was changed and why. So far one: ASZK-1, which AADR places
-  at Marosszentgyörgy (Romania); Maróti et al. 2022 and Schütz et al. 2025
-  give the solitary grave at Árpás-Dombiföld (Hungary), with their date,
-  mtDNA and group.
+- **AADR rows that have since been published.** The 711 McColl et al. genomes AADR v66 carries as a 2025 preprint (McCollWillerslevBioRxiv2025) are labelled with the two 2026 *Nature* papers (Germanic and Celtic languages); their dates and dating method follow the papers (radiocarbon where a lab number is given, else the archaeological context), and the card's *Date check* says where AADR differed. CGG_2_021779 (Digomi, Georgia), which AADR gives no coordinates, is now on the map with the papers' coordinates.
+- **AADR rows: the publishing paper first.** Where the map has the
+  publishing paper's own tables (Maróti et al. 2022, Gerber et al. 2024,
+  Gnecchi-Ruscone et al. 2024, Mattila et al. 2023, McColl et al. 2026,
+  Penske et al. 2023, Varga et al. 2024: 1,674 AADR samples), the paper's
+  coordinates, date, sex, mtDNA, Y call and coverage replace AADR's, and the
+  card's *Note* lists every change with AADR's value in brackets. FTDNA's Y
+  call still comes first. Examples: AADR's coordinates for 259 Maróti 2022
+  samples are several kilometres from the paper's GPS readings; KD-29 is at
+  Kaba-Dögös, not Orosháza; many McColl and Gnecchi-Ruscone samples gain the
+  paper's mtDNA, which AADR leaves out. Exceptions, all from the papers
+  themselves:
+  - Radiocarbon dates are taken from wherever the paper reports them, not
+    only from its main table. Maróti et al. 2022 give only centuries in
+    their sample table, but 73 radiocarbon dates in Data S2A/S2B. These
+    replace AADR's copies, and give five samples a radiocarbon date AADR
+    lacks or does not use: KD-29, SZF-371, SZK-102, SZK-213 and MSG-1. The
+    paper sets one aside, ARK-14, whose grave goods it trusts more; the map
+    follows it and the card quotes the reason. A paper's archaeological date
+    never replaces a radiocarbon date the same paper reports; the card notes
+    where they disagree.
+  - Every supplement of every paper was read for dates, not only the main
+    tables. This added radiocarbon dates for 9 Abasár samples (Varga et
+    al. 2024, Supplementary Information) and 41 Rákóczifalva and Hajdúnánás
+    samples (Gnecchi-Ruscone et al. 2024, Supplementary Tables 2 and 6). It
+    also turned up two burials at Kruszyn, lbk102 and lbk104, whose
+    radiocarbon dates Mattila et al. 2023 reject; the paper dates them by
+    context to c. 7,300-7,000 cal BP, a thousand years before AADR's date.
+    Olalde et al. 2026 set aside the radiocarbon dates AADR gives for five
+    Swifterbant-period burials (a freshwater reservoir effect) and date them by
+    stratigraphy; the map follows the paper and quotes it under *Date check*.
+    The same paper moves I7010 from the Neolithic to the Mesolithic
+    (8000-5500 BCE) and gives I38447 a radiocarbon date where AADR has only
+    a placeholder.
+    The Yunatsite infants YUN035 and YUN037 take the date of the urn burial
+    they share with YUN036 and YUN038 (Penske et al. 2023). The other
+    Gnecchi-Ruscone et al. graves (327) are dated by their phase in the
+    paper's Supplementary Table 2. The years come from the paper's Fig. 1:
+    early Avar period 567-650, middle 650-700, late 700-822. The paper gives
+    no years for its late sub-phases (LA I-III), so those graves get the
+    whole late period.
+  - For 379 McColl et al. samples AADR gives a "radiocarbon" date without a
+    lab number, where the papers' tables give a context date. The papers'
+    Supplementary Information has a radiocarbon date on the individual for
+    one of them (CGG_2_106490, 2159±50 BP, UBA-31576), now used. For the
+    rest the map shows the papers' context dates.
+  - A Y call the paper gives only as an ISOGG name (R1a1a1b2...) is not
+    used, because the map can place it only at the top of its haplogroup.
+    McColl et al.'s own ybyra calls scoring below 150 are not used either.
+  - An ID a paper lists twice (PIE064 in Penske et al.) is not used.
+  - A few years in Penske et al.'s table lack their minus sign (KTL001:
+    3343-3502 for a radiocarbon age of 4609±26 BP); they are read as BCE.
+
+  ASZK-1, which AADR places at Marosszentgyörgy (Romania), is at
+  Árpás-Dombiföld (Hungary), as Maróti et al. 2022 and Schütz et al. 2025
+  give it. Its date is the paper's radiocarbon date (366-533 cal CE,
+  DeA-26539). AADR's date combines that with DeA-26559, which the paper
+  gives to MSG-1, the Marosszentgyörgy man. **PV-12 and PV-125** (Pitvaros, Avar period): AADR's genome data
+  for the two appear to be swapped. AADR's Y calls and coverage for each
+  match the other man in Maróti et al. 2022, while FamilyTreeDNA and a ybyra
+  run agree with the paper (PV-12 E-Z5016, PV-125 I-S8269). The map shows
+  the paper's data; analyses of these two on AADR data use the other man's
+  genome. KD-29 and OBH-52, whom the paper lists as identical twins from two
+  cemeteries, are shown separately. AADR's merged genome of the two
+  (KD-29_OBH-52_twins) is left off the map.
+- **Béla, Duke of Macsó (BPDOM01).** The paper's own Y call is only in its
+  paywalled main text. The map shows a call made here from the paper's raw
+  Yleaf marker list (its Supplementary Table 2), labelled *called here*: 374
+  of the 407 derived markers lie on one line, N-L550, the deepest branch
+  with at least two derived reads. A single read points one step deeper, to
+  N-Y4341.
 - **Site coordinates for the thesis samples** are village or town centres;
   the thesis gives no coordinates.
 
@@ -186,7 +298,7 @@ their real locations replace anything shown here.
 | Published samples | Mallick S. et al. (2024) The Allen Ancient DNA Resource (AADR), *Scientific Data* 11:182; data v66, Harvard Dataverse doi:[10.7910/DVN/FFIDCW](https://doi.org/10.7910/DVN/FFIDCW) | CC0 1.0 |
 | Not in AADR: 156 individuals | Schütz O. et al. (2025) Unveiling the origins and genetic makeup of the "forgotten people": a study of the Sarmatian-period population in the Carpathian Basin, *Cell* 188:4074-4090, doi:[10.1016/j.cell.2025.05.009](https://doi.org/10.1016/j.cell.2025.05.009). Cemetery, grave, coordinates, radiocarbon dates, coverage, sex, mtDNA and group from its Tables S1a and S1c; archaeological dates from the site descriptions in its supplement; Y from FamilyTreeDNA Discover | open access, CC BY-NC-ND 4.0; please cite the paper |
 | Not in AADR: MSG-1, OBH-52, SH-66 | Maróti Z. et al. (2022) The genetic origin of Huns, Avars, and conquering Hungarians, *Current Biology* 32:2858-2870, doi:[10.1016/j.cub.2022.04.093](https://doi.org/10.1016/j.cub.2022.04.093), Data S1A; for MSG-1 also Schütz et al. 2025, Table S1b | please cite the paper |
-| Not in AADR: 314 individuals | Tian Y. et al. (2026) Unveiling the complexity of post-Roman polity formation in Pannonia using ancient DNA, *Science* 392:eaec2634, doi:[10.1126/science.aec2634](https://doi.org/10.1126/science.aec2634); the data are read from the authors' preprint version, doi:[10.1101/2025.08.18.670760](https://doi.org/10.1101/2025.08.18.670760) (Supplementary Table 1, site descriptions) | please cite the paper |
+| Not in AADR: 314 individuals | Tian Y. et al. (2026) Unveiling the complexity of post-Roman polity formation in Pannonia using ancient DNA, *Science* 392:eaec2634, doi:[10.1126/science.aec2634](https://doi.org/10.1126/science.aec2634). Site, sex, coverage, mtDNA and radiocarbon dates from its Table S1, each man's terminal Y SNP from Table S2, and site dates from Supplementary Text S1 (the published version withdraws 75 of the preprint's low-coverage mtDNA calls; the map follows it) | please cite the paper |
 | Not in AADR: 38 individuals | Vyas D. N. et al. (2023) Fine-scale sampling uncovers the complexity of migrations in 5th-6th century Pannonia, *Current Biology* 33:3951-3961, doi:[10.1016/j.cub.2023.07.063](https://doi.org/10.1016/j.cub.2023.07.063), Table S1 | please cite the paper |
 | Not in AADR: 22 individuals | Yediay F. E. et al. (2024) Ancient genomics support deep divergence between Eastern and Western Mediterranean Indo-European languages, bioRxiv preprint, doi:[10.1101/2024.12.02.626332](https://doi.org/10.1101/2024.12.02.626332), Tables S2 and S7 | please cite the preprint |
 | Not in AADR: KUP003, KUP025 | Gnecchi-Ruscone G. A. et al. (2024) Network of large pedigrees reveals social practices of Avar communities, *Nature* 629:376-383, doi:[10.1038/s41586-024-07312-4](https://doi.org/10.1038/s41586-024-07312-4), Supplementary Table 1 and Information; coordinates as AADR gives for the paper's other Kunpeszér individuals | please cite the paper |
@@ -197,6 +309,10 @@ their real locations replace anything shown here.
 | Not in AADR: PIE016 (= PIE007, PIE031), PIE061 (= PIE060) | Penske S. et al. (2023) Early contact between late farming and pastoralist societies in southeastern Europe, *Nature* 620:358-365, doi:[10.1038/s41586-023-06334-8](https://doi.org/10.1038/s41586-023-06334-8), Supplementary Table A | please cite the paper |
 | Not in AADR: buk013, buk031 | Mattila T. M. et al. (2023) Genetic continuity, isolation, and gene flow in Stone Age Central and Eastern Europe, *Communications Biology* 6:793, doi:[10.1038/s42003-023-05131-3](https://doi.org/10.1038/s42003-023-05131-3), Supplementary Data 1 | please cite the paper |
 | Not in AADR: BPDOM01 | Hajdu T. et al. (2026) Murder in cold blood? Forensic and bioarchaeological identification of the skeletal remains of Béla, Duke of Macsó (c. 1245-1272), *Forensic Science International: Genetics* 81:103381, doi:[10.1016/j.fsigen.2025.103381](https://doi.org/10.1016/j.fsigen.2025.103381), Supplementary Information | please cite the paper |
+| Not in AADR: SZTL (King Ladislaus I) | Varga G. I. B. et al. (2023) The archaeogenomic validation of Saint Ladislaus' relic provides insights into the Árpád dynasty's genealogy, *Journal of Genetics and Genomics* 50:58-61, doi:[10.1016/j.jgg.2022.06.008](https://doi.org/10.1016/j.jgg.2022.06.008), Table S1b. The sample is his skull relic (Győr); the pin is his burial place, the cathedral of Várad (Oradea), from historical sources | please cite the paper |
+| Not in AADR: I7018, I12902, SWA001, I13659; 40 more in AADR | Olalde I. et al. (2026) Lasting Lower Rhine–Meuse forager ancestry shaped Bell Beaker expansion, *Nature* 652:938-946, doi:[10.1038/s41586-026-10111-8](https://doi.org/10.1038/s41586-026-10111-8). Site, coordinates, date, sex, coverage, mtDNA and Y from its Supplementary Table 1; radiocarbon dates also in Supplementary Table 16, site context in its Supplementary Information. I7018 and I12902 were shown before as anonymised Akbari et al. 2026 samples at inferred find spots (Malonne, Ottoland), now at the paper's (Grotte Rousseau, Mienakker) | please cite the paper |
+| Not in AADR: 224 individuals; 10 more in AADR | Carrión P. et al. (2026) Contrasting demographic impacts of Roman colonization and early medieval migrations in the Iberian Peninsula, *Cell* 189, doi:[10.1016/j.cell.2026.09.052](https://doi.org/10.1016/j.cell.2026.09.052). Locality, coordinates, date, sex, mtDNA and Y from its Table S1A (radiocarbon dates also in Table S5A). Left out: the 9 individuals the paper itself flags for contamination. Two were shown before as anonymised Akbari et al. 2026 samples at inferred find spots in Sicily (I22103, I23273) | please cite the paper |
+| Published versions of AADR's McCollWillerslevBioRxiv2025 (711 individuals) | McColl H. et al. (2026) Tracing the spread of Germanic languages using ancient genomics, *Nature*, doi:[10.1038/s41586-025-09064-1](https://doi.org/10.1038/s41586-025-09064-1), Table S1.1; and McColl H. et al. (2026) Tracing the spread of Celtic languages using ancient genomics, *Nature*, doi:[10.1038/s41586-026-11198-9](https://doi.org/10.1038/s41586-026-11198-9), Table S1.1. Study label, dates and dating method from the papers; coordinates for CGG_2_021779 (Digomi), which AADR lacks | please cite the papers |
 | Site locations where a paper gives no coordinates | [OpenStreetMap](https://www.openstreetmap.org/copyright) (Nominatim): the street, district or village the paper's site name gives | ODbL; &copy; OpenStreetMap contributors |
 | Anonymized samples: dates, coverage, IBD used for placement | Akbari A. et al. (2026) Ancient DNA reveals pervasive directional selection across West Eurasia, *Nature*, doi:[10.1038/s41586-026-10358-1](https://doi.org/10.1038/s41586-026-10358-1), supplementary data | the publisher's and authors' terms; please cite the paper |
 | Y-DNA calls for the Akbari individuals | made with ybyra by Teepan (genarchivist.net) on the Akbari 2026 data | please credit Teepan and cite Akbari et al. 2026 |
