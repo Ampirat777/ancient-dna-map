@@ -14,8 +14,8 @@ sortable table shows every sample that matches your search.
 | Marker | Samples | Location |
 |---|---|---|
 | ● filled dot | 20,650 published individuals from the Allen Ancient DNA Resource (AADR v66) | the coordinates AADR records for the site, which are sometimes the nearest town |
-| ● filled dot, card badge *not in AADR v66* | 817 published individuals not yet in AADR, each taken from its own paper (589 from Hungary and Romania, 224 from Spain, 4 from the Lower Rhine–Meuse area): Tian et al. 2026 (314), Schütz et al. 2025 (156), Vyas et al. 2023 (38), Gerber et al. 2024 (23), Yediay et al. 2024 (22, preprint), Gînguță et al. 2023 (13), Nagy et al. 2021 (9), Maróti et al. 2022 (3), Blöcher et al. 2026 (3), Gnecchi-Ruscone et al. 2024 (2), Penske et al. 2023 (2), Mattila et al. 2023 (2), Hajdu et al. 2026 (1), Varga et al. 2023 (1, St Ladislaus, pinned at his burial place) Olalde et al. 2026 (4) and Carrión et al. 2026 (224) | the paper's coordinates; where a paper gives none, AADR's for the paper's other samples from the same site, else the site named in it pinned from OpenStreetMap; the card says which |
-| ○ hollow ring | 1,703 individuals from Akbari et al. 2026 whose locations were **anonymized** by the authors | **inferred** by this project, see below |
+| ● filled dot, card badge *not in AADR v66* | 1,368 published individuals not yet in AADR, each taken from its own paper (589 from Hungary and Romania, 499 from Britain, 224 from Spain, 52 from Bulgaria, 4 from the Lower Rhine–Meuse area): Tian et al. 2026 (314), Schütz et al. 2025 (156), Vyas et al. 2023 (38), Gerber et al. 2024 (23), Yediay et al. 2024 (22, preprint), Gînguță et al. 2023 (13), Nagy et al. 2021 (9), Maróti et al. 2022 (3), Blöcher et al. 2026 (3), Gnecchi-Ruscone et al. 2024 (2), Penske et al. 2023 (2), Mattila et al. 2023 (2), Hajdu et al. 2026 (1), Varga et al. 2023 (1, St Ladislaus, pinned at his burial place), Olalde et al. 2026 (4), Carrión et al. 2026 (224), Olalde et al. 2026, bioRxiv preprint (490), Stamov et al. 2026 (52), Castells Navarro et al. 2026 (2) and Legge et al. 2026 (7) | the paper's coordinates; where a paper gives none, AADR's for the paper's other samples from the same site, else the site named in it pinned from OpenStreetMap; the card says which |
+| ○ hollow ring | 1,632 individuals from Akbari et al. 2026 whose locations were **anonymized** by the authors | **inferred** by this project, see below |
 | ◆ diamond | 33 individuals added by hand from a PhD thesis (Rodrigues 2023, Romania) | the village or town named in the thesis |
 
 Colour shows the date, in five periods from before 5000 BCE to after 500 CE.
@@ -32,7 +32,7 @@ kind of evidence is.
 | Evidence | Meaning | Right country in tests* | Site |
 |---|---|---|---|
 | Adjacent lab number | Skeletons are numbered in batches; a number 1-3 away from a published sample is usually the same batch | 99.5-99.8% | likely |
-| Block vote | Most published samples with nearby lab numbers (within 60) come from one country | 98.5% | probable or region only |
+| Block vote | Most published samples with nearby lab numbers (within 60) come from one country | 98.5% | region only |
 | Close relative | Shares 600+ cM of DNA with an already placed individual | 99.8% | follows the relative |
 | IBD link | Shares long DNA segments with published people who lived within 300 years | 91% | region only |
 
@@ -43,14 +43,22 @@ each other. Samples with weaker evidence are not shown.
 
 When a paper later publishes one of these individuals, its own find spot
 replaces the inferred one and the card says where the map had placed it.
-Four so far, and two of them show how wrong a confident-looking pin can be:
+71 have been published so far (Olalde et al. 2026 Nature and bioRxiv,
+Carrión et al. 2026, Stamov et al. 2026, Legge et al. 2026). They test the
+method, by the confidence the map gave each pin:
 
-| Individual | Inferred at (confidence) | Published find spot | Off by |
-|---|---|---|---|
-| I12902 | Ottoland Kromme Elleboog, NL (site likely) | Mienakker, NL (Olalde et al. 2026) | 95 km |
-| I7018 | Malonne Petit Ri, BE (region only) | Grotte Rousseau, BE (Olalde et al. 2026) | 9 km |
-| I22103 | Birgi, Sicily (site probable, from a block of neighbouring lab numbers) | L'Hostalot, Castelló, Spain (Carrión et al. 2026) | 1,101 km |
-| I23273 | Birgi, Sicily (through its relative I22103) | Necrópolis Blanes, Mérida, Spain (Carrión et al. 2026) | 1,641 km |
+| Confidence on the card | Published so far | Distance from the published find spot |
+|---|---|---|
+| site likely (including through relatives) | 34 | 33 within 1 km; I12902 95 km off |
+| region only (including through relatives) | 34 | median 26 km; 5 more than 200 km off (I41233 405 km, in Serbia instead of Bulgaria) |
+| site probable (a block of neighbouring lab numbers; including through relatives; no longer used, see below) | 3 | 246, 1,101 and 1,641 km off |
+
+Two lessons. "Site likely" pins have nearly all been right. Placements
+from a block of neighbouring lab numbers ("site probable") were wrong
+every time, and a wrong pin passes its error on to relatives placed
+through it (I23273, 1,641 km off through I22103). Since 22 November 2026
+every block placement is labelled "region only": the evidence supports
+the country, not the site.
 
 **These pins are working hypotheses, not recorded find spots. Do not cite
 them as the location of a sample.** When these individuals are published,
@@ -312,6 +320,10 @@ their real locations replace anything shown here.
 | Not in AADR: SZTL (King Ladislaus I) | Varga G. I. B. et al. (2023) The archaeogenomic validation of Saint Ladislaus' relic provides insights into the Árpád dynasty's genealogy, *Journal of Genetics and Genomics* 50:58-61, doi:[10.1016/j.jgg.2022.06.008](https://doi.org/10.1016/j.jgg.2022.06.008), Table S1b. The sample is his skull relic (Győr); the pin is his burial place, the cathedral of Várad (Oradea), from historical sources | please cite the paper |
 | Not in AADR: I7018, I12902, SWA001, I13659; 40 more in AADR | Olalde I. et al. (2026) Lasting Lower Rhine–Meuse forager ancestry shaped Bell Beaker expansion, *Nature* 652:938-946, doi:[10.1038/s41586-026-10111-8](https://doi.org/10.1038/s41586-026-10111-8). Site, coordinates, date, sex, coverage, mtDNA and Y from its Supplementary Table 1; radiocarbon dates also in Supplementary Table 16, site context in its Supplementary Information. I7018 and I12902 were shown before as anonymised Akbari et al. 2026 samples at inferred find spots (Malonne, Ottoland), now at the paper's (Grotte Rousseau, Mienakker) | please cite the paper |
 | Not in AADR: 224 individuals; 10 more in AADR | Carrión P. et al. (2026) Contrasting demographic impacts of Roman colonization and early medieval migrations in the Iberian Peninsula, *Cell* 189, doi:[10.1016/j.cell.2026.09.052](https://doi.org/10.1016/j.cell.2026.09.052). Locality, coordinates, date, sex, mtDNA and Y from its Table S1A (radiocarbon dates also in Table S5A). Left out: the 9 individuals the paper itself flags for contamination. Two were shown before as anonymised Akbari et al. 2026 samples at inferred find spots in Sicily (I22103, I23273) | please cite the paper |
+| Not in AADR: 490 individuals; 3 more in AADR | Olalde I. et al. (2026) Ancient DNA reveals matrilineal organisation and recurrent unions between dominant matrilines in Iron Age Britain, *bioRxiv* preprint, doi:[10.64898/2026.08.03.742615](https://doi.org/10.64898/2026.08.03.742615). Locality, coordinates, date, sex, coverage, mtDNA and Y from its Supplementary Table 1 (East Yorkshire: Wetwang Slack, Pocklington, Melton and others). Left out: the 4 the paper's own assessment marks FAIL. 64 were shown before as anonymised Akbari et al. 2026 samples at inferred find spots | please cite the preprint |
+| Not in AADR: 52 individuals | Stamov S. et al. (2026) Paleogenomic evidence for genetic heterogeneity and prior admixture in Gothic-associated communities of late antique Bulgaria, *Frontiers in Genetics* 17:1864752, doi:[10.3389/fgene.2026.1864752](https://doi.org/10.3389/fgene.2026.1864752). Site, coordinates, date, sex, coverage, mtDNA and Y from its Supplementary Table S1 (Aquae Calidae near Burgas, and the Aul of Khan Omurtag); the 15 individuals the paper set aside from its analyses (a probable later burial horizon, or museum samples without verifiable context) from Table S2, with the paper's reason on each card. Left out: I42006, which fails the paper's quality check. 41 were anonymised in Akbari et al. 2026 and not shown before; I41233 was shown at an inferred find spot in Serbia | open access, CC BY; please cite the paper |
+| Not in AADR: I37347, I37348 | Castells Navarro L. et al. (2026) Reconnecting the dead in Iron Age Britain: funerary processing and long-distance connectivity at Loch Borralie, Scotland, *Antiquity* 100:996-1014, doi:[10.15184/aqy.2026.10353](https://doi.org/10.15184/aqy.2026.10353). Radiocarbon dates from its Table 1, sex, mtDNA and Y from Table 2, the cairn's position from its grid reference (NC 3790 6761) | open access, CC BY; please cite the paper |
+| Not in AADR: 7 individuals; I18599 also in AADR | Legge M. et al. (2026) Rediscovering the dead: reanalysis of a lost Iron Age cemetery at Highsted, Kent, *Oxford Journal of Archaeology* 45(4), doi:[10.1111/ojoa.70030](https://doi.org/10.1111/ojoa.70030). Highsted: sex, mtDNA and Y from its Table 5, radiocarbon dates from Table 2 (individuals without their own date get the span of the cemetery's two dates), the site from its grid reference (TQ 908 618). I18598 and I18600 were shown before as anonymised Akbari et al. 2026 samples at an inferred find spot, which was right. Tothill Street (I36960, I41276): published only in the kinship notes of its supplement (date, site, coordinates, mtDNA), as distant relatives of a Highsted woman | please cite the paper |
 | Published versions of AADR's McCollWillerslevBioRxiv2025 (711 individuals) | McColl H. et al. (2026) Tracing the spread of Germanic languages using ancient genomics, *Nature*, doi:[10.1038/s41586-025-09064-1](https://doi.org/10.1038/s41586-025-09064-1), Table S1.1; and McColl H. et al. (2026) Tracing the spread of Celtic languages using ancient genomics, *Nature*, doi:[10.1038/s41586-026-11198-9](https://doi.org/10.1038/s41586-026-11198-9), Table S1.1. Study label, dates and dating method from the papers; coordinates for CGG_2_021779 (Digomi), which AADR lacks | please cite the papers |
 | Site locations where a paper gives no coordinates | [OpenStreetMap](https://www.openstreetmap.org/copyright) (Nominatim): the street, district or village the paper's site name gives | ODbL; &copy; OpenStreetMap contributors |
 | Anonymized samples: dates, coverage, IBD used for placement | Akbari A. et al. (2026) Ancient DNA reveals pervasive directional selection across West Eurasia, *Nature*, doi:[10.1038/s41586-026-10358-1](https://doi.org/10.1038/s41586-026-10358-1), supplementary data | the publisher's and authors' terms; please cite the paper |
