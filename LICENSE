@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 the ancient-dna-map contributors
+Copyright (c) 2026 Ampirat777
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -20,5 +20,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Note: this licence covers the page's code (HTML, CSS, JavaScript). The data
-embedded in index.html keep their sources' terms; see README.md.
+Note: this licence covers the page's code (HTML, CSS, JavaScript) only.
+This project's own work on the data embedded in index.html (corrections, Y
+placements and hand checks, code links, inferred find spots, card notes) is
+licensed under the Creative Commons Attribution 4.0 International licence
+(CC BY 4.0, https://creativecommons.org/licenses/by/4.0/): reuse it freely,
+also commercially, but credit "Ampirat777, Ancient DNA samples by find spot,
+https://ampirat777.github.io/ancient-dna-map/". The sources' own data keep
+their terms; see README.md.

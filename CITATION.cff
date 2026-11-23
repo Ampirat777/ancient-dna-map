@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this map or its curated data, please cite it as below, and also cite the papers of the samples you use (each card names its source)."
+type: dataset
+title: "Ancient DNA samples by find spot"
+abstract: "An interactive map of about 22,000 ancient human genomes by find spot, with dates, sex, Y-DNA (placed on FamilyTreeDNA's tree) and mtDNA haplogroups, and corrections to AADR from the publishing papers."
+authors:
+  - alias: Ampirat777
+url: "https://ampirat777.github.io/ancient-dna-map/"
+repository-code: "https://github.com/Ampirat777/ancient-dna-map"
+license:
+  - CC-BY-4.0
+  - MIT
+date-released: 2026-11-23
+keywords:
+  - ancient DNA
+  - archaeogenetics
+  - Y-DNA haplogroups
+  - mtDNA haplogroups
+  - map

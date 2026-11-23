@@ -452,6 +452,16 @@ their real locations replace anything shown here.
   `index.html?q=y:V13&to=1 CE#id=I2762`.
 - **Layers** (top right): grey or OpenStreetMap background; rivers on or off.
 
+## How to cite this map
+
+> Ampirat777 (2026). *Ancient DNA samples by find spot* [interactive map].
+> https://ampirat777.github.io/ancient-dna-map/ (accessed on the date you
+> used it).
+
+GitHub's *Cite this repository* button (from `CITATION.cff`) gives the same
+in APA and BibTeX. Please also cite the papers of the samples you use: each
+card names its source, and the table below lists them all.
+
 ## Sources and licences
 
 | Data | Source | Terms |
@@ -523,7 +533,18 @@ their real locations replace anything shown here.
 | Map libraries | [Leaflet](https://leafletjs.com) 1.9.4, [MapLibre GL JS](https://maplibre.org) 5.24.1, [maplibre-gl-leaflet](https://github.com/maplibre/maplibre-gl-leaflet) 0.1.4 | their open-source licences |
 
 The page itself (its HTML, CSS and JavaScript) is released under the MIT
-licence, see `LICENSE`. The data keep their sources' terms above.
+licence, see `LICENSE`.
+
+This project's own work on the data is licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): you may copy,
+adapt and share it, also commercially, as long as you credit this map (see
+*How to cite this map*) and say what you changed. That work is the
+corrections to AADR and to the papers (dates, labels, sexes, coordinates),
+the Y placements and hand checks made for the map, the links between the
+codes different sources use for the same individual, the inferred find
+spots of the anonymized samples, and the notes written on the cards. The
+facts themselves, and the data of the sources listed above, are not covered
+by this licence and keep their own terms.
 
 ## Publishing on GitHub Pages
 
