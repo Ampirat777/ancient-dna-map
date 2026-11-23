@@ -209,7 +209,8 @@ their real locations replace anything shown here.
   publishing paper's own tables (Maróti et al. 2022, Gerber et al. 2024,
   Gnecchi-Ruscone et al. 2024, Mattila et al. 2023, McColl et al. 2026,
   Penske et al. 2023, Stolarek et al. 2023, Varga et al. 2024, Lazaridis et
-  al. 2025: 2,311 AADR samples), the paper's coordinates, date, sex, mtDNA,
+  al. 2025, Szécsényi-Nagy et al. 2025: 2,442 AADR samples), the paper's
+  coordinates, date, sex, mtDNA,
   Y call and coverage replace AADR's; the card's *Note* names the fields that
   are the paper's, and AADR's values are not shown. Where the paper gives a Y
   call, AADR's is dropped (94 samples). FTDNA's Y call still comes first. Examples: AADR's coordinates for 259 Maróti 2022
@@ -264,6 +265,28 @@ their real locations replace anything shown here.
     paper's estimate of present-day mtDNA contamination is 10% or more (53
     individuals, PCA0558 61%), the card warns that the mtDNA call may not be
     the individual's.
+  - Szécsényi-Nagy et al. 2025 (Late Neolithic and Early Copper Age
+    Carpathian Basin, 131 individuals): the paper's own radiocarbon dates
+    replace AADR's context dates for 29 burials (I10013: Poz-50290,
+    4790-4690 cal BCE, not 4900-4400 BCE), and its modelled site dates
+    replace AADR's for 71. The paper quotes 68.2% ranges, so a date AADR
+    already calibrates from the same lab number keeps AADR's 95.4% range.
+    Where AADR's label names a different culture from the paper's pottery
+    style for the grave, the paper's is used: 19 Tiszapolgár graves at
+    Tiszapolgár-Basatanya and Polgár-Nagykasziba (AADR: Bodrogkeresztúr or
+    Late Neolithic Tisza), the Ludanice burials at Budapest-Albertfalva and
+    Iváncsa (AADR: Middle Neolithic), and Urziceni's Bodrogkeresztúr-Salcuţa
+    and Piscolţ graves. Every card carries the paper's grave description:
+    grave number, age, pottery, burial position and grave goods.
+- **Credit to the paper that first published a sample.** AADR keeps one
+  version of each individual and credits it to the paper that released that
+  version, often a later re-sequencing (Akbari et al. 2026 re-sequenced many
+  Mathieson 2018, Olalde 2018 and Szécsényi-Nagy 2025 individuals) or a
+  large data release for present-day genomes. The map credits the paper
+  that first published the individual, and the card's *Source* names the
+  later release the data shown come from (about 2,000 samples). A first
+  publication that was a preprint is credited to its journal version where
+  AADR pairs them.
   - An ID a paper lists twice (PIE064 in Penske et al.) is not used.
   - A few years in Penske et al.'s table lack their minus sign (KTL001:
     3343-3502 for a radiocarbon age of 4609±26 BP); they are read as BCE.
@@ -451,6 +474,7 @@ their real locations replace anything shown here.
 | Not in AADR: ETR001, ETR016, MAS003, UDC_P (Tuscany) | Posth C. et al. (2021) The origin and legacy of the Etruscans through a 2000-year archeogenomic time transect, *Science Advances* 7:eabi7673, doi:[10.1126/sciadv.abi7673](https://doi.org/10.1126/sciadv.abi7673), Table S1a (radiocarbon on each). Left out: ETR015, which the paper excludes for nuclear contamination | please cite the paper |
 | Not in AADR: 6 individuals (Başur Höyük) | Wengrow D. et al. (2025) Inequality at the dawn of the Bronze Age: the case of Başur Höyük, a 'royal' cemetery at the margins of the Mesopotamian world, *Cambridge Archaeological Journal* 34:293-304, doi:[10.1017/S0959774324000398](https://doi.org/10.1017/S0959774324000398), Appendix I, Table 1 (genetic sex only); the site from OpenStreetMap | please cite the paper |
 | AADR rows corrected from their paper: 289 individuals (Poland) | Stolarek I. et al. (2023) Genetic history of East-Central Europe in the first millennium CE, *Genome Biology* 24:173, doi:[10.1186/s13059-023-03013-9](https://doi.org/10.1186/s13059-023-03013-9), Tables S1, S3 and S4 (period, dates, sex, mtDNA and its contamination estimate, Y) | please cite the paper |
+| AADR rows corrected from their paper: 131 individuals (Hungary, Romania) | Szécsényi-Nagy A. et al. (2025) Ancient DNA reveals diverse community organizations in the 5th millennium BCE Carpathian Basin, *Nature Communications*, doi:[10.1038/s41467-025-60368-2](https://doi.org/10.1038/s41467-025-60368-2), Supplementary Data 1 and 2 (dates, coordinates, sex, mtDNA, Y, pottery style and grave descriptions) | please cite the paper |
 | AADR labels and dates checked against their papers (186 samples) | Mathieson et al. 2018 (*Nature*, doi:[10.1038/nature25778](https://doi.org/10.1038/nature25778)), Freilich et al. 2021 (*Sci Rep*, doi:[10.1038/s41598-021-94932-9](https://doi.org/10.1038/s41598-021-94932-9)), Lazaridis et al. 2022 (*Science*, doi:[10.1126/science.abm4247](https://doi.org/10.1126/science.abm4247)), Antonio et al. 2024 (*eLife*, doi:[10.7554/eLife.79714](https://doi.org/10.7554/eLife.79714)), McColl et al. 2026 (*Nature*, doi:[10.1038/s41586-025-09064-1](https://doi.org/10.1038/s41586-025-09064-1)), Olalde et al. 2023 (*Cell*, doi:[10.1016/j.cell.2023.10.018](https://doi.org/10.1016/j.cell.2023.10.018)), Yu et al. 2020 (*Cell*, doi:[10.1016/j.cell.2020.04.037](https://doi.org/10.1016/j.cell.2020.04.037)), Yu et al. 2022 (*iScience*, doi:[10.1016/j.isci.2022.104244](https://doi.org/10.1016/j.isci.2022.104244)), Fang et al. 2025 (*Cell Rep*, doi:[10.1016/j.celrep.2025.115262](https://doi.org/10.1016/j.celrep.2025.115262)), Rodríguez-Varela et al. 2023 (*Cell*, doi:[10.1016/j.cell.2022.11.024](https://doi.org/10.1016/j.cell.2022.11.024)), Lazaridis et al. 2025 (*Nature*, doi:[10.1038/s41586-024-08531-5](https://doi.org/10.1038/s41586-024-08531-5)), Ghalichi et al. 2024 (*Nature*, doi:[10.1038/s41586-024-08113-5](https://doi.org/10.1038/s41586-024-08113-5)), Margaryan et al. 2020 (*Nature*, doi:[10.1038/s41586-020-2688-8](https://doi.org/10.1038/s41586-020-2688-8)), Flegontov et al. 2019 (*Nature*, doi:[10.1038/s41586-019-1251-y](https://doi.org/10.1038/s41586-019-1251-y)), Nakatsuka et al. 2023 (*Nature*, doi:[10.1038/s41586-023-06771-5](https://doi.org/10.1038/s41586-023-06771-5)), Roca-Rada et al. 2025 (*Genome Biol*, doi:[10.1186/s13059-025-03707-2](https://doi.org/10.1186/s13059-025-03707-2)), Lipson et al. 2017 (*Nature*, doi:[10.1038/nature24476](https://doi.org/10.1038/nature24476)), Liu et al. 2025 (*Nat Commun*, doi:[10.1038/s41467-025-56555-w](https://doi.org/10.1038/s41467-025-56555-w)), Allentoft et al. 2024 (*Nature*, doi:[10.1038/s41586-023-06865-0](https://doi.org/10.1038/s41586-023-06865-0)), Robbeets et al. 2021 (*Nature*, doi:[10.1038/s41586-021-04108-8](https://doi.org/10.1038/s41586-021-04108-8)), Omrak et al. 2016 (*Curr Biol*, doi:[10.1016/j.cub.2015.12.019](https://doi.org/10.1016/j.cub.2015.12.019)), Antonio et al. 2019 (*Science*, doi:[10.1126/science.aay6826](https://doi.org/10.1126/science.aay6826)), Arzelier et al. 2024 (*Proc R Soc B*, doi:[10.1098/rspb.2024.1215](https://doi.org/10.1098/rspb.2024.1215)), González-Fortes et al. 2019 (*Proc R Soc B*, doi:[10.1098/rspb.2018.2288](https://doi.org/10.1098/rspb.2018.2288)), Furtwängler et al. 2020 (*Nat Commun*, doi:[10.1038/s41467-020-15560-x](https://doi.org/10.1038/s41467-020-15560-x)), Scheib et al. 2018 (*Science*, doi:[10.1126/science.aar6851](https://doi.org/10.1126/science.aar6851)), Damgaard et al. 2018 (*Science*, doi:[10.1126/science.aar7711](https://doi.org/10.1126/science.aar7711)); the tables and passages each correction comes from are named on its card | please cite the papers |
 | Published versions of AADR's McCollWillerslevBioRxiv2025 (711 individuals) | McColl H. et al. (2026) Tracing the spread of Germanic languages using ancient genomics, *Nature*, doi:[10.1038/s41586-025-09064-1](https://doi.org/10.1038/s41586-025-09064-1), Table S1.1; and McColl H. et al. (2026) Tracing the spread of Celtic languages using ancient genomics, *Nature*, doi:[10.1038/s41586-026-11198-9](https://doi.org/10.1038/s41586-026-11198-9), Table S1.1. Study label, dates and dating method from the papers; coordinates for CGG_2_021779 (Digomi), which AADR lacks | please cite the papers |
 | Site locations where a paper gives no coordinates | [OpenStreetMap](https://www.openstreetmap.org/copyright) (Nominatim): the street, district or village the paper's site name gives | ODbL; &copy; OpenStreetMap contributors |
