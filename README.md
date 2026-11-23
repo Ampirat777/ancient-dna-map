@@ -115,7 +115,7 @@ their real locations replace anything shown here.
     ("Pitvaros 125"), or when the paper's own table gives that lab ID
     (MMper268 = MM-80 in Maróti et al. 2022). This added FTDNA's call to
     577 samples, mostly McColl et al. 2026 and Maróti et al. 2022. A check
-    of every sample still without an FTDNA call (2026-11-23) linked 364
+    of every sample still without an FTDNA call (2026-11-23) linked 366
     that FTDNA has under another ID (and found 10 that only Discover lists,
     under the map's own ID): the paper's lab code (Gurgy GRG063 =
     AADR GLN250), a suffix (BRC029x, JinlianshanM15_4_8 for
@@ -126,7 +126,9 @@ their real locations replace anything shown here.
     individuals, which it lists by name only: Kostenki 14, Ötzi, Cheddar Man
     (I3016), Motala Man (I0012), the Ditchling and Slonk Hill men (I6774,
     I7632), the Aconcagua mummy, Béla of Macsó (BPDOM01) and Liangdao Man
-    (tai001).
+    (tai001). Where FTDNA uses a second Reich lab number, the skeleton code
+    decides: El Mirador I0584 is skeleton MIR11, FTDNA's I1274 "Mirador 11";
+    Uelen I1524 is specimen Mos104, FTDNA's I7334 "Moscow 104".
   - **Other codes.** The same individual often has several codes: the
     paper's (the map's own ID wherever the paper gives one), AADR's library
     IDs, other IDs in the paper's table, and FamilyTreeDNA's code and name
