@@ -14,7 +14,7 @@ sortable table shows every sample that matches your search.
 | Marker | Samples | Location |
 |---|---|---|
 | ● filled dot | 20,650 published individuals from the Allen Ancient DNA Resource (AADR v66) | the coordinates AADR records for the site, which are sometimes the nearest town |
-| ● filled dot, card badge *not in AADR v66* | 3,333 published individuals not yet in AADR, each taken from its own paper (614 from Germany, 592 from Hungary and Romania, 499 from Britain, 405 from Italy, 361 from Slovenia, 251 from Spain, 134 from Turkey, 123 from Croatia, 79 from Greece, 57 from Bulgaria, 49 from Serbia, 47 from Cyprus, 30 from Poland, 26 from Ukraine, 20 from Lebanon, 19 from France, 9 from Moldova, 5 from Latvia, 5 from Syria, 3 from Austria, 1 from Armenia, 4 from the Lower Rhine–Meuse area): Vyas et al. 2025 (397, preprint), Tian et al. 2026 (314), Yediay et al. 2024 (316, preprint), Schütz et al. 2025 (156), Gretzinger et al. 2025 (546), Vyas et al. 2023 (53), Croze et al. 2025 (48), Monnereau et al. 2026 (32), Tian et al. 2024 (28), Yüncü et al. 2025 (64), Reitsema et al. 2022 (43), Koptekin et al. 2025 (26), Fibiger et al. 2026 (27), Psonis et al. 2026 (26), Fontani et al. 2025 (23), Gerber et al. 2024 (23), Coia et al. 2023 (21), Blöcher et al. 2026 (253), Hofmanová et al. 2022 (21, preprint), Monnereau et al. 2024 (20), Laffranchi et al. 2024 (15), Ravasini et al. 2024 (14), Saupe et al. 2021 (11), Mathieson et al. 2018 (6), Freilich et al. 2021 (4), Novak et al. 2025 (4), Neparáczki et al. 2022 (2, John and Christopher Corvinus), Antonio et al. 2024 (1), Bagnasco Gianni et al. 2024 (1), Skourtanioti et al. 2020 (1), Weber et al. 2025 (1), Lazaridis et al. 2022 (11), Wengrow et al. 2025 (6), Posth et al. 2021 (4), Gînguță et al. 2023 (13), Nagy et al. 2021 (9), Maróti et al. 2022 (3), Gnecchi-Ruscone et al. 2024 (2), Penske et al. 2023 (3), Mattila et al. 2023 (4), Hajdu et al. 2026 (1), Varga et al. 2023 (1, St Ladislaus, pinned at his burial place), Olalde et al. 2026 (4), Carrión et al. 2026 (224), Olalde et al. 2026, bioRxiv preprint (490), Stamov et al. 2026 (52), Castells Navarro et al. 2026 (2) and Legge et al. 2026 (7) | the paper's coordinates; where a paper gives none, AADR's for the paper's other samples from the same site, else the site named in it pinned from OpenStreetMap; the card says which |
+| ● filled dot, card badge *not in AADR v66* | 3,385 published individuals not yet in AADR, each taken from its own paper (614 from Germany, 592 from Hungary and Romania, 499 from Britain, 405 from Italy, 361 from Slovenia, 251 from Spain, 134 from Turkey, 123 from Croatia, 79 from Greece, 57 from Bulgaria, 52 from Czechia, 49 from Serbia, 47 from Cyprus, 30 from Poland, 26 from Ukraine, 20 from Lebanon, 19 from France, 9 from Moldova, 5 from Latvia, 5 from Syria, 3 from Austria, 1 from Armenia, 4 from the Lower Rhine–Meuse area): Vyas et al. 2025 (397, preprint), Tian et al. 2026 (314), Yediay et al. 2024 (316, preprint), Schütz et al. 2025 (156), Gretzinger et al. 2025 (546), Schulz et al. 2025 (52), Vyas et al. 2023 (53), Croze et al. 2025 (48), Monnereau et al. 2026 (32), Tian et al. 2024 (28), Yüncü et al. 2025 (64), Reitsema et al. 2022 (43), Koptekin et al. 2025 (26), Fibiger et al. 2026 (27), Psonis et al. 2026 (26), Fontani et al. 2025 (23), Gerber et al. 2024 (23), Coia et al. 2023 (21), Blöcher et al. 2026 (253), Hofmanová et al. 2022 (21, preprint), Monnereau et al. 2024 (20), Laffranchi et al. 2024 (15), Ravasini et al. 2024 (14), Saupe et al. 2021 (11), Mathieson et al. 2018 (6), Freilich et al. 2021 (4), Novak et al. 2025 (4), Neparáczki et al. 2022 (2, John and Christopher Corvinus), Antonio et al. 2024 (1), Bagnasco Gianni et al. 2024 (1), Skourtanioti et al. 2020 (1), Weber et al. 2025 (1), Lazaridis et al. 2022 (11), Wengrow et al. 2025 (6), Posth et al. 2021 (4), Gînguță et al. 2023 (13), Nagy et al. 2021 (9), Maróti et al. 2022 (3), Gnecchi-Ruscone et al. 2024 (2), Penske et al. 2023 (3), Mattila et al. 2023 (4), Hajdu et al. 2026 (1), Varga et al. 2023 (1, St Ladislaus, pinned at his burial place), Olalde et al. 2026 (4), Carrión et al. 2026 (224), Olalde et al. 2026, bioRxiv preprint (490), Stamov et al. 2026 (52), Castells Navarro et al. 2026 (2) and Legge et al. 2026 (7) | the paper's coordinates; where a paper gives none, AADR's for the paper's other samples from the same site, else the site named in it pinned from OpenStreetMap; the card says which |
 | ○ hollow ring | 1,632 individuals from Akbari et al. 2026 whose locations were **anonymized** by the authors | **inferred** by this project, see below |
 | ◆ diamond | 33 individuals added by hand from a PhD thesis (Rodrigues 2023, Romania) | the village or town named in the thesis |
 
@@ -86,7 +86,9 @@ their real locations replace anything shown here.
     shows which FTDNA branch carries the same mutations: Y3120 is FTDNA's
     I-S20602, so `y:Y3120` finds the same samples as `y:S20602`. Where even
     that fails, the sample is placed at a higher branch, never a lower one,
-    and its card says so.
+    and its card says so. YFull lists some SNPs again on unrelated branches
+    (recurrent mutations), so an SNP is looked up only among YFull branches
+    of the call's own haplogroup letter.
   - Sometimes FTDNA splits one YFull branch into an upper and a lower part,
     and it is unknown which part carries the SNP you searched for. The
     search then starts at the lower part, where every sample is certainly
@@ -95,7 +97,7 @@ their real locations replace anything shown here.
     `y:Y19966` (FTDNA H-P96 > H-Z19008) returns 102 samples; 15 at H-P96
     alone are left out.
   - **FamilyTreeDNA first.** Where FTDNA has assigned a Y haplogroup
-    (about 9,200 samples), that is the only Y assignment shown, for every
+    (about 9,900 samples), that is the only Y assignment shown, for every
     haplogroup: other sources' calls for the same sample are left out of
     the card, the table, the CSV and the search. Example: FTDNA stops MGS200
     at I-CTS10228 (AADR had called it I-Y3120), so it is found by
@@ -107,7 +109,11 @@ their real locations replace anything shown here.
     the grave or sample number agree in both IDs and in FTDNA's sample name
     ("Pitvaros 125"), or when the paper's own table gives that lab ID
     (MMper268 = MM-80 in Maróti et al. 2022). This added FTDNA's call to
-    577 samples, mostly McColl et al. 2026 and Maróti et al. 2022.
+    577 samples, mostly McColl et al. 2026 and Maróti et al. 2022. FTDNA
+    files the Portuguese samples of Roca-Rada Teixeira et al. 2025 under
+    its own numbers (PT_24170, "Santarem 24170", is LP114_10); 34 of them
+    are linked where FTDNA's record names the sample and its place name
+    agrees with the site.
   - **Without an FTDNA call** the sample's other calls are shown, each with
     who made it (a ybyra run made for this map, ybyra by Teepan, the
     publishing paper's own call, AADR's manual or automatic call, this
@@ -120,7 +126,7 @@ their real locations replace anything shown here.
     samples whose sources put them on different branches.
   - The table's **Y source** column says whose call each row's Y is (FTDNA,
     or which unconfirmed source), so you can sort them apart.
-- **Y calls too young for the person.** Every Y call except FamilyTreeDNA's is checked against the age YFull gives its branch: when even the oldest formation age of the branch is more than 500 years after the person lived, the call cannot be right (typically an automatic call on very low coverage), so the sample moves up to the deepest branch on that line that already existed, and the card says so under *Y check*. Twenty samples are affected, e.g. Solutrean LPI002 (AADR: I-Y21293, a branch about 5,000 years old) now at I-M253. For I3004 (Aveline's Hole, Mesolithic) and I2181 (Smyadovo, Chalcolithic) a ybyra run made for this map places them at F-M89 and R-M207; AADR's automatic calls (R-Y11281, R-Y157823) are false positives.
+- **Y calls too young for the person.** Every Y call except FamilyTreeDNA's is checked against the age YFull gives its branch: when even the oldest formation age of the branch is more than 500 years after the person lived, the call cannot be right (typically an automatic call on very low coverage), so the sample moves up to the deepest branch on that line that already existed, and the card says so under *Y check*. Twenty samples are affected, e.g. Solutrean LPI002 (AADR: I-Y21293, a branch about 5,000 years old) now at I-M253. For I3004 (Aveline's Hole, Mesolithic) and I2181 (Smyadovo, Chalcolithic) a ybyra run made for this map places them at F-M89 and R-M207; AADR's automatic calls (R-Y11281, R-Y157823) are false positives. ALT_4 (Althausen, Corded Ware, 2573-2356 calBCE) is placed at R-P310 by a hand check of its reads: ybyra gives no result there, the reads are derived for P310 and show no other SNP of haplogroup R at mapping quality 30 or more, so AADR's R-Y585573 (deep below R-U152) is not used.
 - **Low-scoring and doubtful Y calls.** ybyra gives each call a score;
   ybyra itself flags scores under 50 as low. Measured against
   FamilyTreeDNA on the samples both called, ybyra calls scoring 150 or more
@@ -129,13 +135,13 @@ their real locations replace anything shown here.
   calls 4.5%. Below 150 there are too few FTDNA calls to measure. So a
   ybyra call still places the sample ahead of the paper's and AADR's calls
   even when its score is low; the card then carries a *low score* caution
-  (53 runs). The exception is a low-scoring call that is the sample's only
+  (56 runs). The exception is a low-scoring call that is the sample's only
   sign of a Y chromosome: some of those belong to women (I21899, score 12,
   is female by AADR's own sexing). Such a call is shown as *dubious*: it
   stays on the card but does not place the sample on the tree or match a Y
   search. Where it was the only sign of a man, the sex is shown as "male?"
   (filed under *unknown* in the sex filter). Nine calls are affected, seven
-  of them on unpublished Akbari samples. Of the 183 ybyra runs made for this
+  of them on unpublished Akbari samples. Of the 186 ybyra runs made for this
   map, 107 overlap with FTDNA; they agree with it as described above. Sex
   proven otherwise overrides any table: I43953 (not on the map, as its find
   spot cannot be inferred) is female by its sequencing reads, so its E-V13
@@ -384,6 +390,7 @@ their real locations replace anything shown here.
 | Not in AADR: 7 individuals; I18599 also in AADR | Legge M. et al. (2026) Rediscovering the dead: reanalysis of a lost Iron Age cemetery at Highsted, Kent, *Oxford Journal of Archaeology* 45(4), doi:[10.1111/ojoa.70030](https://doi.org/10.1111/ojoa.70030). Highsted: sex, mtDNA and Y from its Table 5, radiocarbon dates from Table 2 (individuals without their own date get the span of the cemetery's two dates), the site from its grid reference (TQ 908 618). I18598 and I18600 were shown before as anonymised Akbari et al. 2026 samples at an inferred find spot, which was right. Tothill Street (I36960, I41276): published only in the kinship notes of its supplement (date, site, coordinates, mtDNA), as distant relatives of a Highsted woman | please cite the paper |
 | Not in AADR: 397 individuals (Slovenia 361, Italy 36) | Vyas D. N. et al. (2025) The shifting dynamics of ancestry and culture at a post-Roman crossroads, *bioRxiv* preprint, doi:[10.64898/2025.12.12.693924](https://doi.org/10.64898/2025.12.12.693924). Site, archaeological and radiocarbon dates (lab numbers from Table S3), sex, coverage, mtDNA and Y from its Supplemental Table S1; the 21 sites, which it gives no coordinates for, from OpenStreetMap. Left out: the 13 the paper treats as contaminated | please cite the preprint |
 | Not in AADR: 546 individuals (Germany 380, Croatia 107, Poland 30, Ukraine 24, Latvia 5) | Gretzinger J. et al. (2025) Ancient DNA connects large-scale migration with the spread of Slavs, *Nature*, doi:[10.1038/s41586-025-09437-6](https://doi.org/10.1038/s41586-025-09437-6), Supplementary Table S1. Thirteen Brücken (Germany) lab codes, BRC001 and others, are also used for Saupe et al. 2021's Italian individuals; on the map they read BRC001_Brücken and so on. Left out: 9 rows the table marks identical to another individual. Where the paper fails a sample's mtDNA or Y contamination test, that call is not shown | please cite the paper |
+| Not in AADR: 52 individuals (Czechia: Pohansko 42, Břeclav - Líbivá 10) | Schulz I., Zlámalová D. et al. (2025) Ancient genomes provide evidence of demographic shift to Slavic-associated groups in Moravia, *Genome Biology* 26:259, doi:[10.1186/s13059-025-03700-9](https://doi.org/10.1186/s13059-025-03700-9) (University of Fribourg), Additional files 1-4: the 18 individuals with genomes (sex, Y and mtDNA from Dataset S7; radiocarbon with lab numbers from SI Tables S2-S3) and 34 the paper screened at low depth and adds to its groups in some analyses (site, grave and archaeology only; the card says so). The paper gives no coordinates: both sites pinned from OpenStreetMap. LIB11's Y call, E1b-Z21298, is one the paper itself marks uncertain ("sub E-V13"); it is taken as E-V13, and FamilyTreeDNA, which has all 11 men, places him on the E-L241 line of E-V13 | please cite the paper |
 | Not in AADR: 43 individuals (Trentino-South Tyrol) | Croze et al. (2025) Genomic diversity and structure of prehistoric alpine individuals from the Tyrolean Iceman's territory, *Nature Communications* 16:6431, doi:[10.1038/s41467-025-61601-8](https://doi.org/10.1038/s41467-025-61601-8), Supplementary Data 1, 3 and 19. Left out: the 4 its notes flag as contaminated or without ancient-DNA damage | please cite the paper |
 | Not in AADR: 32 individuals (Sicily) | Monnereau A. et al. (2026) Genetic histories of individuals from multi-faith medieval Sicily, *PLoS One* 21:e0350298, doi:[10.1371/journal.pone.0350298](https://doi.org/10.1371/journal.pone.0350298), S1 Table (its genome-wide individuals) | please cite the paper |
 | Not in AADR: 27 individuals (Gomolava, Serbia) | Fibiger L. et al. (2026) A large mass grave from the Early Iron Age indicates selective violence towards women and children in the Carpathian Basin, *Nature Human Behaviour*, doi:[10.1038/s41562-025-02399-9](https://doi.org/10.1038/s41562-025-02399-9), Supplementary Tables S4 and S12 (Y letters from YFull's tree, as the table gives bare SNP names) | please cite the paper |
