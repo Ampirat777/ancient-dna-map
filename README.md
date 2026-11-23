@@ -97,23 +97,42 @@ their real locations replace anything shown here.
     `y:Y19966` (FTDNA H-P96 > H-Z19008) returns 102 samples; 15 at H-P96
     alone are left out.
   - **FamilyTreeDNA first.** Where FTDNA has assigned a Y haplogroup
-    (about 9,900 samples), that is the only Y assignment shown, for every
+    (about 10,200 samples), that is the only Y assignment shown, for every
     haplogroup: other sources' calls for the same sample are left out of
     the card, the table, the CSV and the search. Example: FTDNA stops MGS200
     at I-CTS10228 (AADR had called it I-Y3120), so it is found by
     `y:CTS10228` but not by `y:Y3120`. FTDNA's conclusion also settles the
-    sex: a sample it assigns a Y haplogroup is shown as male (84 samples
-    that AADR or this project had as female or unknown; the card says so).
+    sex: a sample it assigns a Y haplogroup is male, and a paper or AADR
+    that calls it female is taken to be mistaken (90 samples that AADR,
+    their paper or this project had as female or unknown; the card says so).
+    FTDNA's calls are read from FTDNA Discover itself: its Y tree lists
+    16,746 ancient samples with the branch each sits on today (fetched
+    2026-11-23), joined with the ancientsampledb.app copy, which links most
+    of them to AADR IDs. Where the two differ, Discover's call is used.
     FTDNA often files an ancient sample under the paper's lab ID (PVper125
     for AADR's PV-125). Such a record is linked when the site letters and
     the grave or sample number agree in both IDs and in FTDNA's sample name
     ("Pitvaros 125"), or when the paper's own table gives that lab ID
     (MMper268 = MM-80 in Maróti et al. 2022). This added FTDNA's call to
-    577 samples, mostly McColl et al. 2026 and Maróti et al. 2022. FTDNA
-    files the Portuguese samples of Roca-Rada Teixeira et al. 2025 under
-    its own numbers (PT_24170, "Santarem 24170", is LP114_10); 34 of them
-    are linked where FTDNA's record names the sample and its place name
-    agrees with the site.
+    577 samples, mostly McColl et al. 2026 and Maróti et al. 2022. A check
+    of every sample still without an FTDNA call (2026-11-23) linked 364
+    that FTDNA has under another ID (and found 10 that only Discover lists,
+    under the map's own ID): the paper's lab code (Gurgy GRG063 =
+    AADR GLN250), a suffix (BRC029x, JinlianshanM15_4_8 for
+    JinlianshanM15_4_8_LowCov) or its own number (PT_24170, "Santarem
+    24170", is LP114_10). Each was accepted only where FTDNA's record and
+    the map agree on place, date and study, the sample number or the Y line,
+    and no other sample fits. Nine are among Discover's "notable"
+    individuals, which it lists by name only: Kostenki 14, Ötzi, Cheddar Man
+    (I3016), Motala Man (I0012), the Ditchling and Slonk Hill men (I6774,
+    I7632), the Aconcagua mummy, Béla of Macsó (BPDOM01) and Liangdao Man
+    (tai001).
+  - **Other codes.** The same individual often has several codes: the
+    paper's (the map's own ID wherever the paper gives one), AADR's library
+    IDs, other IDs in the paper's table, and FamilyTreeDNA's code and name
+    (Gurgy GLN250 is FTDNA's GRG063, “Gurgy 63”). Every card lists them under
+    *Other codes*, the CSV has them in `other_codes`, and the search finds a
+    sample by any of them.
   - **Without an FTDNA call** the sample's other calls are shown, each with
     who made it (a ybyra run made for this map, ybyra by Teepan, the
     publishing paper's own call, AADR's manual or automatic call, this
@@ -251,8 +270,9 @@ their real locations replace anything shown here.
   the map was checked for a date that does not fit the period in its label
   (with regional periods: the Iron Age runs to about 1100 CE in Scandinavia).
   195 samples were flagged; those not explained by a label that already
-  records a re-dating were checked against their papers (35 papers). 120
-  samples now show the paper's period or date; the card quotes AADR's value.
+  records a re-dating were checked against their papers (40 papers). 186
+  samples now show the paper's period or date, or a note on it; the card
+  quotes AADR's value.
   Examples:
   - Labels AADR gives a different period from the paper: Vasil'evka
     (Ukraine) "EN" for Mathieson et al. 2018's Ukraine_Mesolithic;
@@ -291,8 +311,25 @@ their real locations replace anything shown here.
     Iron Age are Yamnaya and Afanasievo in the paper: I32852 and I32872
     (Chograi-5, Kalmykia, 3000-2650 BCE) and I32500 (Kamyshta-1, Khakassia,
     3000-2600 BCE).
-  Five papers could not be read for 16 flagged samples (Science, Royal
-  Society and BioTechniques supplements); those keep AADR's values.
+  - Radiocarbon dates AADR calibrates without the reservoir correction the
+    paper applies: all San Nicolas Island (California) individuals of
+    Scheib et al. 2018, whose marine diet the paper corrects for (Marine13,
+    ΔR 217±129). The paper's dates are 300-900 years younger than AADR's
+    (SN-43: 252 BC-62 AD, not 795-550 calBCE), and the groups are the
+    paper's Early and Late San Nicolas populations, not "4800BP" and
+    "1600BP".
+  - Lake Baikal (Damgaard et al. 2018): the four Lokomotiv individuals are
+    Early Neolithic in the paper, not "Eneolithic", and five Ust'-Ida
+    individuals AADR labels only "N" are the paper's Late Neolithic (four)
+    and Early Bronze Age (one). Their dates, like all Baikal dates here, are
+    the paper's radiocarbon ages calibrated without a freshwater reservoir
+    correction: the paper says its Baikal chronology corrects for that
+    effect but its table gives no corrected dates, so the cards say so.
+  - Three Aven de la Boucle individuals (Gard) that AADR files with the
+    cave's Neolithic group are its Middle and Late Bronze Age burials
+    (Arzelier et al. 2024); Lorga de Dine LD270 is Chalcolithic, not Middle
+    Neolithic (González-Fortes et al. 2019); Wartau TU905 (178 BC-2 AD) is
+    Iron Age/Roman, not Early Bronze Age (Furtwängler et al. 2020).
 
   ASZK-1, which AADR places at Marosszentgyörgy (Romania), is at
   Árpás-Dombiföld (Hungary), as Maróti et al. 2022 and Schütz et al. 2025
@@ -412,7 +449,7 @@ their real locations replace anything shown here.
 | Not in AADR: ETR001, ETR016, MAS003, UDC_P (Tuscany) | Posth C. et al. (2021) The origin and legacy of the Etruscans through a 2000-year archeogenomic time transect, *Science Advances* 7:eabi7673, doi:[10.1126/sciadv.abi7673](https://doi.org/10.1126/sciadv.abi7673), Table S1a (radiocarbon on each). Left out: ETR015, which the paper excludes for nuclear contamination | please cite the paper |
 | Not in AADR: 6 individuals (Başur Höyük) | Wengrow D. et al. (2025) Inequality at the dawn of the Bronze Age: the case of Başur Höyük, a 'royal' cemetery at the margins of the Mesopotamian world, *Cambridge Archaeological Journal* 34:293-304, doi:[10.1017/S0959774324000398](https://doi.org/10.1017/S0959774324000398), Appendix I, Table 1 (genetic sex only); the site from OpenStreetMap | please cite the paper |
 | AADR rows corrected from their paper: 289 individuals (Poland) | Stolarek I. et al. (2023) Genetic history of East-Central Europe in the first millennium CE, *Genome Biology* 24:173, doi:[10.1186/s13059-023-03013-9](https://doi.org/10.1186/s13059-023-03013-9), Tables S1, S3 and S4 (period, dates, sex, mtDNA and its contamination estimate, Y) | please cite the paper |
-| AADR labels and dates checked against their papers (120 samples) | Mathieson et al. 2018 (*Nature*, doi:[10.1038/nature25778](https://doi.org/10.1038/nature25778)), Freilich et al. 2021 (*Sci Rep*, doi:[10.1038/s41598-021-94932-9](https://doi.org/10.1038/s41598-021-94932-9)), Lazaridis et al. 2022 (*Science*, doi:[10.1126/science.abm4247](https://doi.org/10.1126/science.abm4247)), Antonio et al. 2024 (*eLife*, doi:[10.7554/eLife.79714](https://doi.org/10.7554/eLife.79714)), McColl et al. 2026 (*Nature*, doi:[10.1038/s41586-025-09064-1](https://doi.org/10.1038/s41586-025-09064-1)), Olalde et al. 2023 (*Cell*, doi:[10.1016/j.cell.2023.10.018](https://doi.org/10.1016/j.cell.2023.10.018)), Yu et al. 2020 (*Cell*, doi:[10.1016/j.cell.2020.04.037](https://doi.org/10.1016/j.cell.2020.04.037)), Yu et al. 2022 (*iScience*, doi:[10.1016/j.isci.2022.104244](https://doi.org/10.1016/j.isci.2022.104244)), Fang et al. 2025 (*Cell Rep*, doi:[10.1016/j.celrep.2025.115262](https://doi.org/10.1016/j.celrep.2025.115262)), Rodríguez-Varela et al. 2023 (*Cell*, doi:[10.1016/j.cell.2022.11.024](https://doi.org/10.1016/j.cell.2022.11.024)), Lazaridis et al. 2025 (*Nature*, doi:[10.1038/s41586-024-08531-5](https://doi.org/10.1038/s41586-024-08531-5)), Ghalichi et al. 2024 (*Nature*, doi:[10.1038/s41586-024-08113-5](https://doi.org/10.1038/s41586-024-08113-5)), Margaryan et al. 2020 (*Nature*, doi:[10.1038/s41586-020-2688-8](https://doi.org/10.1038/s41586-020-2688-8)), Flegontov et al. 2019 (*Nature*, doi:[10.1038/s41586-019-1251-y](https://doi.org/10.1038/s41586-019-1251-y)), Nakatsuka et al. 2023 (*Nature*, doi:[10.1038/s41586-023-06771-5](https://doi.org/10.1038/s41586-023-06771-5)), Roca-Rada et al. 2025 (*Genome Biol*, doi:[10.1186/s13059-025-03707-2](https://doi.org/10.1186/s13059-025-03707-2)), Lipson et al. 2017 (*Nature*, doi:[10.1038/nature24476](https://doi.org/10.1038/nature24476)), Liu et al. 2025 (*Nat Commun*, doi:[10.1038/s41467-025-56555-w](https://doi.org/10.1038/s41467-025-56555-w)), Allentoft et al. 2024 (*Nature*, doi:[10.1038/s41586-023-06865-0](https://doi.org/10.1038/s41586-023-06865-0)), Robbeets et al. 2021 (*Nature*, doi:[10.1038/s41586-021-04108-8](https://doi.org/10.1038/s41586-021-04108-8)), Omrak et al. 2016 (*Curr Biol*, doi:[10.1016/j.cub.2015.12.019](https://doi.org/10.1016/j.cub.2015.12.019)), Antonio et al. 2019 (*Science*, doi:[10.1126/science.aay6826](https://doi.org/10.1126/science.aay6826)); the tables and passages each correction comes from are named on its card | please cite the papers |
+| AADR labels and dates checked against their papers (186 samples) | Mathieson et al. 2018 (*Nature*, doi:[10.1038/nature25778](https://doi.org/10.1038/nature25778)), Freilich et al. 2021 (*Sci Rep*, doi:[10.1038/s41598-021-94932-9](https://doi.org/10.1038/s41598-021-94932-9)), Lazaridis et al. 2022 (*Science*, doi:[10.1126/science.abm4247](https://doi.org/10.1126/science.abm4247)), Antonio et al. 2024 (*eLife*, doi:[10.7554/eLife.79714](https://doi.org/10.7554/eLife.79714)), McColl et al. 2026 (*Nature*, doi:[10.1038/s41586-025-09064-1](https://doi.org/10.1038/s41586-025-09064-1)), Olalde et al. 2023 (*Cell*, doi:[10.1016/j.cell.2023.10.018](https://doi.org/10.1016/j.cell.2023.10.018)), Yu et al. 2020 (*Cell*, doi:[10.1016/j.cell.2020.04.037](https://doi.org/10.1016/j.cell.2020.04.037)), Yu et al. 2022 (*iScience*, doi:[10.1016/j.isci.2022.104244](https://doi.org/10.1016/j.isci.2022.104244)), Fang et al. 2025 (*Cell Rep*, doi:[10.1016/j.celrep.2025.115262](https://doi.org/10.1016/j.celrep.2025.115262)), Rodríguez-Varela et al. 2023 (*Cell*, doi:[10.1016/j.cell.2022.11.024](https://doi.org/10.1016/j.cell.2022.11.024)), Lazaridis et al. 2025 (*Nature*, doi:[10.1038/s41586-024-08531-5](https://doi.org/10.1038/s41586-024-08531-5)), Ghalichi et al. 2024 (*Nature*, doi:[10.1038/s41586-024-08113-5](https://doi.org/10.1038/s41586-024-08113-5)), Margaryan et al. 2020 (*Nature*, doi:[10.1038/s41586-020-2688-8](https://doi.org/10.1038/s41586-020-2688-8)), Flegontov et al. 2019 (*Nature*, doi:[10.1038/s41586-019-1251-y](https://doi.org/10.1038/s41586-019-1251-y)), Nakatsuka et al. 2023 (*Nature*, doi:[10.1038/s41586-023-06771-5](https://doi.org/10.1038/s41586-023-06771-5)), Roca-Rada et al. 2025 (*Genome Biol*, doi:[10.1186/s13059-025-03707-2](https://doi.org/10.1186/s13059-025-03707-2)), Lipson et al. 2017 (*Nature*, doi:[10.1038/nature24476](https://doi.org/10.1038/nature24476)), Liu et al. 2025 (*Nat Commun*, doi:[10.1038/s41467-025-56555-w](https://doi.org/10.1038/s41467-025-56555-w)), Allentoft et al. 2024 (*Nature*, doi:[10.1038/s41586-023-06865-0](https://doi.org/10.1038/s41586-023-06865-0)), Robbeets et al. 2021 (*Nature*, doi:[10.1038/s41586-021-04108-8](https://doi.org/10.1038/s41586-021-04108-8)), Omrak et al. 2016 (*Curr Biol*, doi:[10.1016/j.cub.2015.12.019](https://doi.org/10.1016/j.cub.2015.12.019)), Antonio et al. 2019 (*Science*, doi:[10.1126/science.aay6826](https://doi.org/10.1126/science.aay6826)), Arzelier et al. 2024 (*Proc R Soc B*, doi:[10.1098/rspb.2024.1215](https://doi.org/10.1098/rspb.2024.1215)), González-Fortes et al. 2019 (*Proc R Soc B*, doi:[10.1098/rspb.2018.2288](https://doi.org/10.1098/rspb.2018.2288)), Furtwängler et al. 2020 (*Nat Commun*, doi:[10.1038/s41467-020-15560-x](https://doi.org/10.1038/s41467-020-15560-x)), Scheib et al. 2018 (*Science*, doi:[10.1126/science.aar6851](https://doi.org/10.1126/science.aar6851)), Damgaard et al. 2018 (*Science*, doi:[10.1126/science.aar7711](https://doi.org/10.1126/science.aar7711)); the tables and passages each correction comes from are named on its card | please cite the papers |
 | Published versions of AADR's McCollWillerslevBioRxiv2025 (711 individuals) | McColl H. et al. (2026) Tracing the spread of Germanic languages using ancient genomics, *Nature*, doi:[10.1038/s41586-025-09064-1](https://doi.org/10.1038/s41586-025-09064-1), Table S1.1; and McColl H. et al. (2026) Tracing the spread of Celtic languages using ancient genomics, *Nature*, doi:[10.1038/s41586-026-11198-9](https://doi.org/10.1038/s41586-026-11198-9), Table S1.1. Study label, dates and dating method from the papers; coordinates for CGG_2_021779 (Digomi), which AADR lacks | please cite the papers |
 | Site locations where a paper gives no coordinates | [OpenStreetMap](https://www.openstreetmap.org/copyright) (Nominatim): the street, district or village the paper's site name gives | ODbL; &copy; OpenStreetMap contributors |
 | Anonymized samples: dates, coverage, IBD used for placement | Akbari A. et al. (2026) Ancient DNA reveals pervasive directional selection across West Eurasia, *Nature*, doi:[10.1038/s41586-026-10358-1](https://doi.org/10.1038/s41586-026-10358-1), supplementary data | the publisher's and authors' terms; please cite the paper |
