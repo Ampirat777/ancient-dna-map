@@ -13,7 +13,7 @@ sortable table shows every sample that matches your search.
 
 | Marker | Samples | Location |
 |---|---|---|
-| ● filled dot | 20,650 published individuals from the Allen Ancient DNA Resource (AADR v66) | the coordinates AADR records for the site, which are sometimes the nearest town |
+| ● filled dot | 20,737 published individuals from the Allen Ancient DNA Resource (AADR v66) | the coordinates AADR records for the site, which are sometimes the nearest town; for 88 that AADR gives without coordinates, the paper's (6) or the place AADR or the paper names, located in OpenStreetMap (82) |
 | ● filled dot, card badge *not in AADR v66* | 5,058 published individuals not yet in AADR, each taken from its own paper (910 from Germany, 595 from Hungary and Romania, 544 from Britain, 407 from Italy, 361 from Slovenia, 280 from Spain, 134 from Turkey, 123 from Croatia, 82 from Greece, 57 from Bulgaria, 67 from Czechia, 205 from Georgia, 296 from Russia, 49 from Serbia, 47 from Cyprus, 96 from Poland, 79 from Ukraine, 20 from Lebanon, 197 from France, 142 from Denmark, 132 from Austria, 147 from Sweden, 23 from Finland, 13 from Lithuania, 9 from Moldova, 6 from Latvia, 5 from Syria, 26 from Armenia, 1 from Belarus, 1 from Bosnia-Herzegovina, 4 from the Lower Rhine–Meuse area): Vyas et al. 2025 (397, preprint), Tian et al. 2026 (314), Yediay et al. 2024 (316, preprint), Schütz et al. 2025 (156), Gretzinger et al. 2025 (546), Schulz et al. 2025 (52), Skourtanioti et al. 2025 (230), Andreeva et al. 2025 (151), Andreeva et al. 2025, Genetic history of Rus', bioRxiv preprint (200), Vyas et al. 2023 (53), Croze et al. 2025 (48), Monnereau et al. 2026 (32), Tian et al. 2024 (28), Yüncü et al. 2025 (64), Reitsema et al. 2022 (43), Koptekin et al. 2025 (26), Fibiger et al. 2026 (27), Psonis et al. 2026 (26), Fontani et al. 2025 (23), Gerber et al. 2024 (23), Coia et al. 2023 (21), Blöcher et al. 2026 (253), Hofmanová et al. 2022 (21, preprint), Monnereau et al. 2024 (20), Laffranchi et al. 2024 (15), Ravasini et al. 2024 (14), Saupe et al. 2021 (11), Mathieson et al. 2018 (6), Freilich et al. 2021 (4), Novak et al. 2025 (4), Neparáczki et al. 2022 (2, John and Christopher Corvinus), Antonio et al. 2024 (1), Bagnasco Gianni et al. 2024 (1), Skourtanioti et al. 2020 (1), Weber et al. 2025 (1), Lazaridis et al. 2022 (11), Wengrow et al. 2025 (6), Posth et al. 2021 (4), Gînguță et al. 2023 (13), Nagy et al. 2021 (9), Maróti et al. 2022 (3), Gnecchi-Ruscone et al. 2024 (2), Penske et al. 2023 (3), Mattila et al. 2023 (4), Hajdu et al. 2026 (1), Varga et al. 2023 (1, St Ladislaus, pinned at his burial place), Olalde et al. 2026 (4), Carrión et al. 2026 (224), Olalde et al. 2026, bioRxiv preprint (490), Stamov et al. 2026 (52), Castells Navarro et al. 2026 (2), Legge et al. 2026 (7), Tabin et al. 2026 (9, preprint), Cummings et al. 2026 (15), Seersholm et al. 2026 (178), Romeyer-Dherbey et al. 2026 (177), Furtwängler et al. 2025 (129), da Silva et al. 2026 (129), Krzewińska et al. 2026 (121), da Silva et al. 2025 (83), Orfanou et al. 2026 (69), Golubiński et al. 2026 (39), Vuković et al. 2026 (30), Nordfors et al. 2025 (23), Zenczak et al. 2026 (22, the Piasts), Bretos Ezcurra et al. 2025 (16), Rodríguez-Varela et al. 2026 (13), Barbieri et al. 2025 (13, Napoleon's Grande Armée) and Ivarsson-Aalders et al. 2025 (26) | the paper's coordinates; where a paper gives none, AADR's for the paper's other samples from the same site, else the site named in it pinned from OpenStreetMap; the card says which |
 | ● filled dot, card note *find spot as FamilyTreeDNA Discover names it* | 128 individuals from Akbari et al. 2026 whose find spots the authors **anonymized** but FamilyTreeDNA Discover names ("Novi Sad 33762", "Tanais 26455") | the map's site of that name, else the place in OpenStreetMap; the card says which, and that FTDNA cites no source |
 | ○ hollow ring | 1,582 individuals from Akbari et al. 2026 whose locations were **anonymized** by the authors | **inferred** by this project, see below |
@@ -283,6 +283,29 @@ their real locations replace anything shown here.
   date (some burials in the Royal Basilica of Székesfehérvár), the sample is
   shown undated.
 - **AADR rows that have since been published.** The 711 McColl et al. genomes AADR v66 carries as a 2025 preprint (McCollWillerslevBioRxiv2025) are labelled with the two 2026 *Nature* papers (Germanic and Celtic languages); their dates and dating method follow the papers (radiocarbon where a lab number is given, else the archaeological context), and the card's *Date check* says where AADR differed. CGG_2_021779 (Digomi, Georgia), which AADR gives no coordinates, is now on the map with the papers' coordinates.
+- **AADR rows without coordinates.** AADR v66 gives 89 ancient individuals
+  no coordinates. 88 are now on the map, and the card's *Note* says where each
+  pin comes from:
+  - 6 take their paper's coordinates. Five are Amjadi et al. 2025's
+    Marsin-Chal samples (Iran), which AADR lists as "Unknown"; they also take
+    the paper's dates and label. IRN61, IRN65 and IRN68 are dated by the
+    paper from the archaeological period, where AADR gives a radiocarbon
+    date. The sixth is CGG_2_021779 (Digomi).
+  - 82 are pinned in OpenStreetMap at the place AADR names: a village, ravine,
+    mountain or ruin. For the Canary Islands sites, the pins follow Serrano et
+    al. 2023's own description of each site. Two of AADR's island names are
+    replaced by the paper's: Los Pasitos is on La Palma, not Gran Canaria, and
+    Arenas-1 is on Tenerife, not La Gomera. CAN.005 is given only its island
+    (Fuerteventura). CGG_2_106523 is given only its region (Vendsyssel); the
+    papers call its findspot unknown. I8508 (Zaman Baba, Uzbekistan) is
+    pinned only approximately: no coordinates are published, and the site is
+    placed about 15 km northwest of Karakul, by Lake Zamanbaba, as
+    descriptions of it put it.
+  - 1 stays off: BOT.1 ("Unknown, Morocco").
+
+  The other 694 AADR rows without coordinates are present-day genomes, listed
+  under a population name ("Telugu", "Southern China (Han)") or "Unknown",
+  with no find spot; they are not shown.
 - **AADR rows: the publishing paper first.** Where the map has the
   publishing paper's own tables (Maróti et al. 2022, Gerber et al. 2024,
   Gnecchi-Ruscone et al. 2024, Mattila et al. 2023, McColl et al. 2026,
