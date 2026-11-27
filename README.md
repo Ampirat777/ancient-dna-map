@@ -42,6 +42,19 @@ whether the same evidence recovers it. This measures the country; the exact
 site is less certain. Placements are dropped when relatives' dates contradict
 each other. Samples with weaker evidence are not shown.
 
+The shared-DNA figures behind *Close relative* and *IBD link* come from a table of
+total shared IBD (cM) per pair of samples compiled by **23abc**, a user of the
+genarchivist.net forum,
+not from Akbari et al.'s publication; its method is not published. Credit to 23abc.
+
+An inferred individual takes its anchor's culture as its label only when the
+two lived within 300 years of each other. 300 are dated further apart: I7888
+(1950 BCE) sits next to the Yamnaya burial I7891, about 700 years older. They are
+labelled "unpublished (Akbari 2026)", and the card names the anchor's culture
+and the gap. The site is then less certain, as one batch of samples can hold
+several periods of a site. Every inferred pin sits at its anchor as the map shows
+it, the publishing paper's site and coordinates where they replaced AADR's.
+
 When a paper later publishes one of these individuals, its own find spot
 replaces the inferred one and the card says where the map had placed it.
 71 have been published so far (Olalde et al. 2026 Nature and bioRxiv,
@@ -161,19 +174,23 @@ their real locations replace anything shown here.
     Uelen I1524 is specimen Mos104, FTDNA's I7334 "Moscow 104".
   - **Other codes.** The same individual often has several codes: the
     paper's (the map's own ID wherever the paper gives one), AADR's library
-    IDs, other IDs in the paper's table, and FamilyTreeDNA's code and name
+    IDs, other IDs in the paper's table, the codes later papers and AADR's
+    duplicate rows give the same person (each with its source: SHT001 lists
+    AADR's I6222, Wang et al. 2021), and FamilyTreeDNA's code and name
     (Gurgy GLN250 is FTDNA's GRG063, “Gurgy 63”). Every card lists them under
     *Other codes*, the CSV has them in `other_codes`, and the search finds a
     sample by any of them.
   - **Without an FTDNA call** the sample's other calls are shown, each with
-    who made it (a ybyra run made for this map, ybyra by Teepan, the
-    publishing paper's own call, AADR's manual or automatic call, this
-    project's yhaplo call), under the note "no FamilyTreeDNA assignment:
-    unconfirmed, may be of low quality". Its tree place comes from the first
-    of them in that order. ybyra comes first because it agrees with FTDNA
-    most often where both called the same sample (ybyra 98%, AADR 96%, this
-    project 96%); the paper's call ranks above AADR's because the map
-    follows the publishing paper wherever it has one. ⚠ marks the few
+    who made it (a ybyra run made for this map by ArmandoR1b, the publishing
+    paper's own call, AADR's manual or automatic call, this project's yhaplo
+    call), under the note "no FamilyTreeDNA assignment: unconfirmed, may be of
+    low quality". Its tree place comes from the first of them in that order.
+    ybyra comes first because it agrees with FTDNA most often where both
+    called the same sample (ybyra 98%, AADR 96%, this project 96%); the
+    paper's call ranks above AADR's because the map follows the publishing
+    paper wherever it has one. ybyra calls from an older spreadsheet remain
+    only on samples with no FTDNA, AADR or ArmandoR1b call (13 samples, 4 of
+    them placed by it); they are marked *to be re-checked*. ⚠ marks the few
     samples whose sources put them on different branches.
   - The table's **Y source** column says whose call each row's Y is (FTDNA,
     or which unconfirmed source), so you can sort them apart.
@@ -193,7 +210,7 @@ their real locations replace anything shown here.
   search. Where it was the only sign of a man, the sex is shown as "male?"
   (filed under *unknown* in the sex filter). Nine calls are affected, seven
   of them on unpublished Akbari samples. Of the 242 ybyra runs made for this
-  map, 120 overlap with FTDNA; they agree with it as described above. Twenty
+  map by ArmandoR1b, 120 overlap with FTDNA; they agree with it as described above. Twenty
   runs (Carrión et al. 2026) found too little Y coverage to place the sample
   at all: those samples keep the paper's own call, and the card says the run
   could not confirm it. Sex
@@ -208,7 +225,26 @@ their real locations replace anything shown here.
   check can also find too little Y data to place anyone: for I3525 (Yamnaya,
   Sárrétudvari) the few derived reads fall on unrelated branches (A, E-V13, F,
   P), so every call, including the paper's R-Y132510, is set aside, as if
-  the man had not been typed for Y. No ybyra placement may rest on transition
+  the man had not been typed for Y. For I27983 (Dnieper-Donets, Yasynuvatka,
+  about 5175 BCE) ArmandoR1b's check found the Y reads most likely come from a
+  contaminant: AADR flags contamination, and the derived reads run down the
+  R-L21>DF13>CTS4466 line, some 3,000 years younger than him. So AADR's
+  R-CTS4466 and the earlier ybyra run's call are set aside too.
+  For I3035 (Fox Holes Cave, England) ArmandoR1b's check found the Y reads
+  genuine at least down to R-Z304 (R-U106 line), and AADR's own assessment
+  puts its 4000-3500 BCE context date more than 1,000 years off: he is
+  placed at R-Z304 and shown *undated*, the card saying why.
+  For AfontovaGora2 (Siberia, about 15,000 BCE) ArmandoR1b's check of AADR's
+  genotypes finds no read at M343, so AADR's R1b is not used; his deepest
+  derived reads fall on R-M198, a branch YFull dates after this man's
+  lifetime, so he is placed at R-CTS5437, the deepest branch of that line
+  that existed then.
+  For pcw110 (Corded Ware, Szczytna, Poland) ybyra gives only P-P226 (score
+  16), but ArmandoR1b's manual check finds 2 reads for M269's equivalents
+  and 1 for L23 genuine although they are transitions: he is placed at
+  R-L23, and AADR's automatic R-BY23885 is not used. A hand check like this
+  is exempt from the transition rule below, as its transitions were
+  checked read by read. No ybyra placement may rest on transition
   SNPs alone (C↔T, G↔A). Post-mortem damage turns C into T and G into A,
   so a "derived" transition can be damage. A ybyra call whose branch is
   defined only by transitions sits at the deepest branch on its line that
@@ -420,6 +456,12 @@ their real locations replace anything shown here.
   genome. KD-29 and OBH-52, whom the paper lists as identical twins from two
   cemeteries, are shown separately. AADR's merged genome of the two
   (KD-29_OBH-52_twins) is left off the map.
+- **SHT001 and I6222 are one man.** AADR has two rows for the Shatar-Chuluu
+  burial (Mongolia, Afanasievo): both are skeletal code AT-26 (written AT_26;
+  Grave 2, MONU_26), sampled twice, by Jeong et al. 2020 (SHT001, 3.26×) and
+  Wang et al. 2021 (I6222, 0.15×). FamilyTreeDNA lists him once, under I6222,
+  as "Shatar Chuluu 1" (R-P310). The map shows him once, as SHT001, with
+  FamilyTreeDNA's call and I6222 among his other codes (found by ArmandoR1b).
 - **Béla, Duke of Macsó (BPDOM01).** The paper's own Y call is only in its
   paywalled main text. The map shows a call made here from the paper's raw
   Yleaf marker list (its Supplementary Table 2), labelled *called here*: 374
@@ -455,7 +497,9 @@ their real locations replace anything shown here.
   matches the same names: `pub:pontic pub:crossroads`.
   Region is the UN's M49 subregion of the country (Hungary and Romania are
   Eastern Europe, Serbia and Croatia Southern Europe). Unpublished samples
-  are listed under their anchor's culture, marked [inferred]. *Coverage*
+  are listed under their anchor's culture, marked [inferred], when the two
+  lived within 300 years of each other; the others under "unpublished
+  (Akbari 2026)". *Coverage*
   takes a minimum and/or maximum (`1` = at least 1×); samples without a
   coverage figure drop out once it is set. **Reset all filters** clears
   everything. The page address keeps every filter, so copying it shares
@@ -492,6 +536,11 @@ their real locations replace anything shown here.
 GitHub's *Cite this repository* button (from `CITATION.cff`) gives the same
 in APA and BibTeX. Please also cite the papers of the samples you use: each
 card names its source, and the table below lists them all.
+
+**Credits.** Two users of the genarchivist.net forum contributed data: **ArmandoR1b**
+the ybyra calls added since the map was made (242 runs) and his hand checks of
+samples' reads, and **23abc** the table of shared IBD used to place the anonymized
+samples. Please credit them when you reuse those parts.
 
 ## Sources and licences
 
@@ -567,8 +616,9 @@ card names its source, and the table below lists them all.
 | AADR labels and dates checked against their papers (186 samples) | Mathieson et al. 2018 (*Nature*, doi:[10.1038/nature25778](https://doi.org/10.1038/nature25778)), Freilich et al. 2021 (*Sci Rep*, doi:[10.1038/s41598-021-94932-9](https://doi.org/10.1038/s41598-021-94932-9)), Lazaridis et al. 2022 (*Science*, doi:[10.1126/science.abm4247](https://doi.org/10.1126/science.abm4247)), Antonio et al. 2024 (*eLife*, doi:[10.7554/eLife.79714](https://doi.org/10.7554/eLife.79714)), McColl et al. 2026 (*Nature*, doi:[10.1038/s41586-025-09064-1](https://doi.org/10.1038/s41586-025-09064-1)), Olalde et al. 2023 (*Cell*, doi:[10.1016/j.cell.2023.10.018](https://doi.org/10.1016/j.cell.2023.10.018)), Yu et al. 2020 (*Cell*, doi:[10.1016/j.cell.2020.04.037](https://doi.org/10.1016/j.cell.2020.04.037)), Yu et al. 2022 (*iScience*, doi:[10.1016/j.isci.2022.104244](https://doi.org/10.1016/j.isci.2022.104244)), Fang et al. 2025 (*Cell Rep*, doi:[10.1016/j.celrep.2025.115262](https://doi.org/10.1016/j.celrep.2025.115262)), Rodríguez-Varela et al. 2023 (*Cell*, doi:[10.1016/j.cell.2022.11.024](https://doi.org/10.1016/j.cell.2022.11.024)), Lazaridis et al. 2025 (*Nature*, doi:[10.1038/s41586-024-08531-5](https://doi.org/10.1038/s41586-024-08531-5)), Ghalichi et al. 2024 (*Nature*, doi:[10.1038/s41586-024-08113-5](https://doi.org/10.1038/s41586-024-08113-5)), Margaryan et al. 2020 (*Nature*, doi:[10.1038/s41586-020-2688-8](https://doi.org/10.1038/s41586-020-2688-8)), Flegontov et al. 2019 (*Nature*, doi:[10.1038/s41586-019-1251-y](https://doi.org/10.1038/s41586-019-1251-y)), Nakatsuka et al. 2023 (*Nature*, doi:[10.1038/s41586-023-06771-5](https://doi.org/10.1038/s41586-023-06771-5)), Roca-Rada et al. 2025 (*Genome Biol*, doi:[10.1186/s13059-025-03707-2](https://doi.org/10.1186/s13059-025-03707-2)), Lipson et al. 2017 (*Nature*, doi:[10.1038/nature24476](https://doi.org/10.1038/nature24476)), Liu et al. 2025 (*Nat Commun*, doi:[10.1038/s41467-025-56555-w](https://doi.org/10.1038/s41467-025-56555-w)), Allentoft et al. 2024 (*Nature*, doi:[10.1038/s41586-023-06865-0](https://doi.org/10.1038/s41586-023-06865-0)), Robbeets et al. 2021 (*Nature*, doi:[10.1038/s41586-021-04108-8](https://doi.org/10.1038/s41586-021-04108-8)), Omrak et al. 2016 (*Curr Biol*, doi:[10.1016/j.cub.2015.12.019](https://doi.org/10.1016/j.cub.2015.12.019)), Antonio et al. 2019 (*Science*, doi:[10.1126/science.aay6826](https://doi.org/10.1126/science.aay6826)), Arzelier et al. 2024 (*Proc R Soc B*, doi:[10.1098/rspb.2024.1215](https://doi.org/10.1098/rspb.2024.1215)), González-Fortes et al. 2019 (*Proc R Soc B*, doi:[10.1098/rspb.2018.2288](https://doi.org/10.1098/rspb.2018.2288)), Furtwängler et al. 2020 (*Nat Commun*, doi:[10.1038/s41467-020-15560-x](https://doi.org/10.1038/s41467-020-15560-x)), Scheib et al. 2018 (*Science*, doi:[10.1126/science.aar6851](https://doi.org/10.1126/science.aar6851)), Damgaard et al. 2018 (*Science*, doi:[10.1126/science.aar7711](https://doi.org/10.1126/science.aar7711)); the tables and passages each correction comes from are named on its card | please cite the papers |
 | Published versions of AADR's McCollWillerslevBioRxiv2025 (711 individuals) | McColl H. et al. (2026) Tracing the spread of Germanic languages using ancient genomics, *Nature*, doi:[10.1038/s41586-025-09064-1](https://doi.org/10.1038/s41586-025-09064-1), Table S1.1; and McColl H. et al. (2026) Tracing the spread of Celtic languages using ancient genomics, *Nature*, doi:[10.1038/s41586-026-11198-9](https://doi.org/10.1038/s41586-026-11198-9), Table S1.1. Study label, dates and dating method from the papers; coordinates for CGG_2_021779 (Digomi), which AADR lacks | please cite the papers |
 | Site locations where a paper gives no coordinates | [OpenStreetMap](https://www.openstreetmap.org/copyright) (Nominatim): the street, district or village the paper's site name gives | ODbL; &copy; OpenStreetMap contributors |
-| Anonymized samples: dates, coverage, IBD used for placement | Akbari A. et al. (2026) Ancient DNA reveals pervasive directional selection across West Eurasia, *Nature*, doi:[10.1038/s41586-026-10358-1](https://doi.org/10.1038/s41586-026-10358-1), supplementary data | the publisher's and authors' terms; please cite the paper |
-| Y-DNA calls for the Akbari individuals | made with ybyra by Teepan (genarchivist.net) on the Akbari 2026 data | please credit Teepan and cite Akbari et al. 2026 |
+| Anonymized samples: dates, coverage | Akbari A. et al. (2026) Ancient DNA reveals pervasive directional selection across West Eurasia, *Nature*, doi:[10.1038/s41586-026-10358-1](https://doi.org/10.1038/s41586-026-10358-1), supplementary data | the publisher's and authors' terms; please cite the paper |
+| Shared DNA used to place anonymized samples (*Close relative*, *IBD link*, the block-vote veto) | a table of total shared IBD (cM) per pair of samples, compiled by **23abc** (genarchivist.net forum), who shared it; not part of Akbari et al. 2026, method not published (values from 9.0 cM up) | credit to 23abc |
+| ybyra calls added since the map was made (*ybyra, this map* on the cards; 242 runs) | made with ybyra by **ArmandoR1b** (genarchivist.net) | please credit ArmandoR1b |
 | mtDNA calls for the Akbari individuals | third-party calls on the Akbari 2026 data, received with the Y calls | as received; please cite Akbari et al. 2026 |
 | Y tree | [FamilyTreeDNA public Y-DNA haplotree](https://www.familytreedna.com/public/y-dna-haplotree/R), downloaded 2026-11-20 | FamilyTreeDNA's; no licence stated. Used to place and search the calls; only branch names are shown |
 | FTDNA haplogroups and names of ancient samples (also the place names used for anonymized Akbari individuals) | [FamilyTreeDNA Discover](https://discover.familytreedna.com/), as compiled by [ancientsampledb.app](https://ancientsampledb.app/) | FamilyTreeDNA's; no licence stated. Shown with credit on every card |
