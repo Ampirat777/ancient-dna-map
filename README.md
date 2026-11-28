@@ -16,7 +16,7 @@ sortable table shows every sample that matches your search.
 | ● filled dot | 20,737 published individuals from the Allen Ancient DNA Resource (AADR v66) | the coordinates AADR records for the site, which are sometimes the nearest town; for 88 that AADR gives without coordinates, the paper's (6) or the place AADR or the paper names, located in OpenStreetMap (82) |
 | ● filled dot, card badge *not in AADR v66* | 5,095 published individuals not yet in AADR, each taken from its own paper (910 from Germany, 597 from Hungary and Romania, 544 from Britain, 407 from Italy, 361 from Slovenia, 280 from Spain, 134 from Turkey, 123 from Croatia, 85 from Greece, 57 from Bulgaria, 67 from Czechia, 205 from Georgia, 297 from Russia, 49 from Serbia, 47 from Cyprus, 96 from Poland, 79 from Ukraine, 20 from Lebanon, 197 from France, 142 from Denmark, 132 from Austria, 147 from Sweden, 23 from Finland, 13 from Lithuania, 11 from Moldova, 6 from Latvia, 5 from Syria, 26 from Armenia, 1 from Belarus, 1 from Bosnia-Herzegovina, 4 from the Lower Rhine–Meuse area, 25 from Egypt, 1 each from Bolivia, Peru, Switzerland and Yemen): Vyas et al. 2025 (397, preprint), Tian et al. 2026 (314), Yediay et al. 2024 (316, preprint), Schütz et al. 2025 (156), Gretzinger et al. 2025 (546), Schulz et al. 2025 (52), Skourtanioti et al. 2025 (230), Andreeva et al. 2025 (151), Andreeva et al. 2025, Genetic history of Rus', bioRxiv preprint (200), Vyas et al. 2023 (53), Croze et al. 2025 (48), Monnereau et al. 2026 (32), Tian et al. 2024 (28), Yüncü et al. 2025 (64), Reitsema et al. 2022 (43), Koptekin et al. 2025 (26), Fibiger et al. 2026 (27), Psonis et al. 2026 (26), Fontani et al. 2025 (23), Gerber et al. 2024 (23), Coia et al. 2023 (21), Blöcher et al. 2026 (253), Hofmanová et al. 2022 (21, preprint), Monnereau et al. 2024 (20), Laffranchi et al. 2024 (15), Ravasini et al. 2024 (14), Saupe et al. 2021 (11), Mathieson et al. 2018 (6), Freilich et al. 2021 (4), Novak et al. 2025 (4), Neparáczki et al. 2022 (2, John and Christopher Corvinus), Antonio et al. 2024 (1), Bagnasco Gianni et al. 2024 (1), Skourtanioti et al. 2020 (1), Weber et al. 2025 (1), Lazaridis et al. 2022 (11), Wengrow et al. 2025 (6), Posth et al. 2021 (4), Gînguță et al. 2023 (13), Nagy et al. 2021 (9), Maróti et al. 2022 (3), Gnecchi-Ruscone et al. 2024 (2), Penske et al. 2023 (3), Mattila et al. 2023 (4), Hajdu et al. 2026 (1), Varga et al. 2023 (1, St Ladislaus, pinned at his burial place), Olalde et al. 2026 (4), Carrión et al. 2026 (224), Olalde et al. 2026, bioRxiv preprint (490), Stamov et al. 2026 (52), Castells Navarro et al. 2026 (2), Legge et al. 2026 (7), Tabin et al. 2026 (9, preprint), Cummings et al. 2026 (15), Seersholm et al. 2026 (178), Romeyer-Dherbey et al. 2026 (177), Furtwängler et al. 2025 (129), da Silva et al. 2026 (129), Krzewińska et al. 2026 (121), da Silva et al. 2025 (83), Orfanou et al. 2026 (69), Golubiński et al. 2026 (39), Vuković et al. 2026 (30), Nordfors et al. 2025 (23), Zenczak et al. 2026 (22, the Piasts), Bretos Ezcurra et al. 2025 (16), Rodríguez-Varela et al. 2026 (13), Barbieri et al. 2025 (13, Napoleon's Grande Armée), Ivarsson-Aalders et al. 2025 (26), Maniatis et al. 2025 (3, Vergina), Wurst et al. 2024 (12), Loreille et al. 2018 (1), Drosou et al. 2018 (2, the Two Brothers), Hawass et al. 2010 (11, Tutankhamun's family; STR data only) and Hawass et al. 2012 (2, Ramesses III; STR data only) Sirak et al. 2024 (1, Soqotra) and Harney et al. 2021 (5) | the paper's coordinates; where a paper gives none, AADR's for the paper's other samples from the same site, else the site named in it pinned from OpenStreetMap; the card says which |
 | ● filled dot, card note *find spot as FamilyTreeDNA Discover names it* | 126 individuals from Akbari et al. 2026 whose find spots the authors **anonymized** but FamilyTreeDNA Discover names ("Novi Sad 33762", "Tanais 26455") | the map's site of that name, else the place in OpenStreetMap; the card says which, and that FTDNA cites no source |
-| ○ hollow ring | 1,768 individuals from Akbari et al. 2026 whose locations were **anonymized** by the authors | **inferred** by this project, see below |
+| ○ hollow ring | 1,644 individuals from Akbari et al. 2026 whose locations were **anonymized** by the authors | **inferred** by this project, see below |
 | ◆ diamond | 33 individuals added by hand from a PhD thesis (Rodrigues 2023, Romania) | the village or town named in the thesis |
 
 Colour shows the date, in five periods from before 5000 BCE to after 500 CE.
@@ -33,7 +33,7 @@ kind of evidence is.
 | Evidence | Meaning | Right country in tests* | Site |
 |---|---|---|---|
 | Adjacent lab number | Skeletons are numbered in batches; a number 1-3 away from a published sample is usually the same batch | 99.5-99.8% | likely |
-| Block vote | Most published samples with nearby lab numbers (within 60) come from one country | 98.5% | region only |
+| Block vote | Most published samples with nearby lab numbers (within 60) come from one country; used only when the nearest of them is at most 20 numbers away | 98% (4-10 away), 93% (11-20) | region only |
 | Close relative | Shares 600+ cM of DNA with an already placed individual | 99.8% | follows the relative |
 | IBD link | Shares long DNA segments with published people who lived within 300 years | 91% | region only |
 
@@ -69,6 +69,21 @@ to another country (I10490, from a Russian IBD link to Glăvănești beside the
 lab number I10487). Close-neighbour evidence (lab numbers 2-3 apart) is now
 weighed before block votes, as the tests rate it higher.
 
+**How far a block vote reaches (since 28 November 2026).** The further the
+nearest published sample is in lab numbers, the weaker a block vote. Hiding
+the published neighbours of published samples, a vote whose nearest remaining
+sample was 31-45 numbers away found the right country 82% of the time, the
+same site 21% and a spot within 200 km 59%; checked against individuals a
+paper or FamilyTreeDNA has since located, every block pin from more than 30
+numbers away was in the wrong country (a batch of ten pinned in Croatia that
+FTDNA places in Serbia). Block votes are therefore used only when the nearest
+published sample of the voted country is at most 20 numbers away. This took
+133 pins off the map (Bulgaria 45, Spain 31, Croatia 12, Italy 11, France 10,
+Turkey 8, Britain 7, others 9); 19 moved to another country because other
+evidence now places them (I23245 and I23246 to Armenia beside I23247, where
+their only IBD links are; a group of Bell Beaker-period individuals, I12989-I13004, from the
+Netherlands to Bohemia by theirs), and 9 were newly placed in Belgium.
+
 When a paper later publishes one of these individuals, its own find spot
 replaces the inferred one and the card says where the map had placed it.
 71 have been published so far (Olalde et al. 2026 Nature and bioRxiv,
@@ -102,7 +117,7 @@ weakness of block votes: of 42 inferred pins they replace, 27 were in the
 wrong country (25 of them "region only" block votes; ~20 Avar-period
 samples from Novi Sad, Serbia, had been pinned on the island of Hvar,
 Croatia; three Latvians in England), and the median move is 357 km. The
-"98.5%" above was measured on other batches; treat "region only" pins as
+rates above were measured on other batches; treat "region only" pins as
 country guesses that can be wrong for whole lab batches.
 
 **These pins are working hypotheses, not recorded find spots. Do not cite
